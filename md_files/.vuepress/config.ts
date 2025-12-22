@@ -1,0 +1,250 @@
+import { defineUserConfig } from "vuepress";
+import { defaultTheme } from "@vuepress/theme-default";
+import { viteBundler } from "@vuepress/bundler-vite";
+import { slimsearchPlugin } from "@vuepress/plugin-slimsearch";
+import { markdownHintPlugin } from "@vuepress/plugin-markdown-hint";
+import { markdownExtPlugin } from "@vuepress/plugin-markdown-ext";
+import { markdownStylizePlugin } from "@vuepress/plugin-markdown-stylize";
+import { markdownMathPlugin } from "@vuepress/plugin-markdown-math";
+
+export default defineUserConfig({
+  bundler: viteBundler(),
+  lang: "zh-CN",
+  title: "山东第二医科大学指南 SDSMU-Companion",
+  description: "321指南",
+
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/400.min.css",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/600.min.css",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.2.8/index.min.css",
+      },
+    ],
+  ],
+
+  theme: defaultTheme({
+    repo: "https://github.com/vuejs/vitepress", // Keeping the original link for now
+    sidebar: [
+      {
+        text: "前言",
+        collapsible: false,
+        children: [
+          { text: "特别感谢", link: "/doc_related/special_thanks.md" },
+          { text: "版权与声明", link: "/doc_related/copyright_statements.md" },
+          { text: "指南简介", link: "/doc_related/document_introduction.md" },
+        ],
+      },
+      {
+        text: "校历",
+        link: "/doc_related/calender.md",
+      },
+      {
+        text: "新生入学",
+        children: [
+          {
+            text: "入学准备",
+            link: "/before_school/school_readiness.md",
+          },
+          {
+            text: "报到",
+            link: "/before_school/school_register.md",
+          },
+          {
+            text: "交通指引",
+            link: "/before_school/goto_school.md",
+          },
+          {
+            text: "军训概况",
+            link: "/before_school/military_training.md",
+          },
+          {
+            text: "费用与银行卡",
+            link: "/before_school/cost.md",
+          },
+          {
+            text: "新生常见问题",
+            link: "/before_school/common_questions.md",
+          },
+        ],
+      },
+      {
+        text: "浮烟山校区",
+        children: [
+          {
+            text: "校区概况",
+            link: "/in_school/campus_fuyanshan/summary_fuyanshan.md",
+          },
+          {
+            text: "地图",
+            children: [
+              {
+                text: "整体地图",
+                link: "/in_school/campus_fuyanshan/maps/map_full.md",
+              },
+              {
+                text: "教学楼",
+                link: "/in_school/campus_fuyanshan/maps/map_ABCDEF.md",
+              },
+              {
+                text: "敏行楼",
+                link: "/in_school/campus_fuyanshan/maps/map_minxing.md",
+              },
+              {
+                text: "附院",
+                link: "/in_school/campus_fuyanshan/maps/map_hospital.md",
+              },
+            ],
+          },
+          {
+            text: "宿舍",
+            link: "/in_school/campus_fuyanshan/dormitory_fuyanshan.md",
+          },
+          {
+            text: "校园生活",
+            link: "/in_school/campus_fuyanshan/school_life_fuyanshan.md",
+          },
+        ],
+      },
+      {
+        text: "虞河校区",
+        children: [
+          {
+            text: "校区概况",
+            link: "/in_school/campus_yuhe/summary_yuhe.md",
+          },
+          {
+            text: "地图",
+            link: "/in_school/campus_yuhe/maps/map_full.md",
+            children: [
+              {
+                text: "整体地图",
+                link: "/in_school/campus_yuhe/maps/map_full.md",
+              },
+              {
+                text: "人民医院",
+                link: "/in_school/campus_yuhe/maps/map_renmin.md",
+              },
+              {
+                text: "附院",
+                link: "/in_school/campus_yuhe/maps/map_hospital.md",
+              },
+            ],
+          },
+          {
+            text: "宿舍",
+            link: "/in_school/campus_yuhe/dormitory_yuhe.md",
+          },
+          {
+            text: "校园生活",
+            link: "/in_school/campus_yuhe/school_life_yuhe.md",
+          },
+        ],
+      },
+      {
+        text: "安全",
+        link: "/in_school/life/security.md",
+      },
+      {
+        text: "学习方面",
+        link: "/in_school/life/study.md",
+      },
+      {
+        text: "就业指引",
+        link: "/in_school/further_education/employment.md",
+      },
+      {
+        text: "教程",
+        children: [
+          {
+            text: "生活类教程",
+            link: "/in_school/tutorial/life.md",
+          },
+          {
+            text: "学习类教程",
+            link: "/in_school/tutorial/study.md",
+          },
+          {
+            text: "其它",
+            children: [
+              { text: "不便分类的教程", link: "/in_school/tutorial/others.md" },
+              {
+                text: "PPT制作指南",
+                link: "/in_school/tutorial/ppt.md",
+              },
+            ],
+          },
+          {
+            text: "通用信息汇总",
+            children: [
+              {
+                text: "常用网站",
+                link: "/in_school/tutorial/common_web.md",
+              },
+              {
+                text: "常用软件",
+                link: "/in_school/tutorial/common_app.md",
+              },
+              {
+                text: "常用公众号",
+                link: "/in_school/tutorial/common_public_accounts.md",
+              },
+              {
+                text: "推荐的其它资源",
+                link: "/in_school/tutorial/recommand_others.md",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        text: "后记",
+        link: "/doc_related/epilogue.md",
+      },
+    ],
+  }),
+
+  plugins: [
+    slimsearchPlugin({
+      indexContent: true,
+      suggestion: true,
+      hotKeys: [{ key: "f", ctrl: true }],
+      locales: {
+        "/": {
+          placeholder: "搜索",
+        },
+      },
+      customFields: [
+        {
+          getter: (page) => page.frontmatter.tags as string[] | undefined,
+          formatter: "标签：$content",
+        },
+      ],
+    }),
+    markdownHintPlugin({}),
+    markdownExtPlugin({
+      footnote: true,
+    }),
+    markdownStylizePlugin({
+      mark: true,
+    }),
+    markdownMathPlugin({
+      type: "mathjax",
+      output: "svg",
+    }),
+  ],
+});

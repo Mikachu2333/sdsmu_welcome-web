@@ -1,0 +1,163 @@
+:root {
+  /* Adapt VitePress variables to VuePress or define them */
+  --font-family: "Noto Sans SC", -apple-system, "Source Han Sans SC",
+    "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "MiSans L3",
+    "HarmonyOS Sans", "Segoe UI", sans-serif;
+  --font-family-code: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
+    "Andale Mono", "Ubuntu Mono", monospace;
+
+  /* VuePress variables */
+  --c-brand: #3451b2; /* Indigo from VitePress config */
+  --c-brand-light: #3a5ccc;
+
+  /* Custom variables used in alert styles if I keep them */
+  --vp-c-brand-1: var(--c-brand);
+  --vp-c-brand-soft: rgba(100, 108, 255, 0.14);
+  --vp-c-green-1: #18794e;
+  --vp-c-green-soft: rgba(16, 185, 129, 0.14);
+  --vp-c-yellow-1: #915930;
+  --vp-c-yellow-soft: rgba(234, 179, 8, 0.14);
+  --vp-c-red-1: #b8272c;
+  --vp-c-red-soft: rgba(244, 63, 94, 0.14);
+  --vp-c-text-1: #3c3c43;
+
+  /* Anchor highlight (light) */
+  --anchor-highlight-bg: #fff3cd;
+}
+
+/* Dark mode overrides */
+html.dark {
+  --anchor-highlight-bg: rgba(255, 235, 150, 0.28);
+}
+
+/* Adapt selectors */
+.theme-default-content {
+  font-size: 16px;
+  line-height: 2;
+}
+
+/* 正文/列表断词：不改行高，避免影响普通正文 */
+.theme-default-content p,
+.theme-default-content ul,
+.theme-default-content ol,
+main.vp-page > [vp-content] p,
+main.vp-page > [vp-content] ul,
+main.vp-page > [vp-content] ol {
+  overflow-wrap: break-word;
+}
+
+/* 仅收紧“宽松列表”（Markdown loose list 的特征：li > p） */
+.theme-default-content li > p,
+main.vp-page > [vp-content] li > p {
+  line-height: 2;
+  margin: 0 0 0em;
+}
+
+/* 同步“紧凑列表”（Markdown tight list：li 直接文本）行高 */
+.theme-default-content li,
+main.vp-page > [vp-content] li {
+  line-height: 2;
+}
+
+.theme-default-content li > p:last-child,
+main.vp-page > [vp-content] li > p:last-child {
+  margin-bottom: 0;
+}
+
+.theme-default-content p {
+  margin: 0 0 0em;
+}
+
+.theme-default-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* 全局正文宽度：最小 320px，理想 1080px，最大 1200px */
+@media (min-width: 960px) {
+  .theme-default-content,
+  main.vp-page > [vp-content],
+  .vp-page-meta,
+  .vp-page-nav {
+    max-width: clamp(320px, 90vw, 1200px);
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* 小屏增强：留出更大边距避免贴边 */
+@media (max-width: 959px) {
+  .theme-default-content,
+  main.vp-page > [vp-content],
+  .vp-page-meta,
+  .vp-page-nav {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* 图片防溢出 */
+main.vp-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.table-compact {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table-compact td,
+.table-compact th {
+  padding: 3pt;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+/* 表格第一行默认加粗 */
+.table-compact tr:first-child td {
+  font-weight: bold;
+}
+
+/* 解决锚点跳转被顶部栏遮挡：为锚点、标题、脚注设置滚动偏移 */
+:target,
+[id],
+.theme-default-content h1,
+.theme-default-content h2,
+.theme-default-content h3,
+.theme-default-content h4,
+.theme-default-content h5,
+.theme-default-content h6,
+.theme-default-content sup[id^="fnref"],
+.theme-default-content sup[id^="fn"] {
+  scroll-margin-top: 96px;
+}
+
+/* 锚点跳转后的临时高亮，3 秒淡出 */
+:target {
+  animation: anchor-highlight 5s ease-out;
+}
+
+/* 脚注回跳（#fnref*）时，高亮其所在段落/列表项 */
+.anchor-highlight-block {
+  animation: anchor-highlight 5s ease-out;
+}
+
+/* 仅在脚注项内高亮段落，不高亮整个列表项（避免影响 ::marker） */
+.footnote-item:target {
+  animation: none;
+}
+
+.footnote-item:target > p {
+  animation: anchor-highlight 5s ease-out;
+}
+
+@keyframes anchor-highlight {
+  0% {
+    background-color: var(--anchor-highlight-bg);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
