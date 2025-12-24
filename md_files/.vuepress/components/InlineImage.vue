@@ -1,8 +1,10 @@
 <template>
-  <img :src="src" :alt="alt" class="inline-image" />
+  <img :src="withBase(src)" :alt="alt" class="inline-image" />
 </template>
 
 <script setup>
+import { withBase } from '@vuepress/client'
+
 defineProps({
   src: {
     type: String,

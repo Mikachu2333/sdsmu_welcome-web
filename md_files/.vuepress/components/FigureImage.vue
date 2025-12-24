@@ -1,24 +1,26 @@
 <template>
-    <figure class="figure-image">
-        <figcaption class="figure-caption">{{ title }}</figcaption>
-        <img :src="src" :alt="alt || title" class="figure-img" />
-    </figure>
+  <figure class="figure-image">
+    <figcaption class="figure-caption">{{ title }}</figcaption>
+    <img :src="withBase(src)" :alt="alt || title" class="figure-img" />
+  </figure>
 </template>
 
 <script setup>
+import { withBase } from '@vuepress/client'
+
 defineProps({
-    src: {
-        type: String,
-        required: true
-    },
-    title: {
-        type: String,
-        required: true
-    },
-    alt: {
-        type: String,
-        default: ''
-    }
+  src: {
+    type: String,
+    required: true
+  },
+  title: {
+    type: String,
+    required: true
+  },
+  alt: {
+    type: String,
+    default: ''
+  }
 })
 </script>
 

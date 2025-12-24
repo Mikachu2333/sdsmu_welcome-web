@@ -24,8 +24,12 @@ tags: ["主页", "捐赠", "打赏", "捐助", "助力", "捐款", "赞助"]
 </br>
 <p style="text-align:center; color:red; font-size:1.5em;">☆*:.｡.o(≧▽≦)o.｡.:*☆</p>
 
+<script setup>
+import { withBase } from '@vuepress/client'
+</script>
+
 <div style="display: flex; justify-content: center; align-items: center; gap: 10%; margin-top: 40px;">
-  <img src="./resources/pay/Ali_pay.png" alt="支付宝" style="width:25%; object-fit: cover;" />
+  <img :src="withBase('/resources/pay/Ali_pay.png')" alt="支付宝" style="width:25%; object-fit: cover;" />
   
-  <img src="./resources/pay/Wechat_pay.png" alt="微信支付" style="width:25%; object-fit: cover;" />
+  <img :src="withBase('/resources/pay/Wechat_pay.png')" alt="微信支付" style="width:25%; object-fit: cover;" />
 </div>
