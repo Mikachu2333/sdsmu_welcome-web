@@ -39,7 +39,7 @@ export default defineUserConfig({
   ],
 
   theme: defaultTheme({
-    repo: "https://github.com/vuejs/vitepress", // Keeping the original link for now
+    repo: "https://github.com/Mikachu2333/sdsmu_welcome-web",
     sidebar: [
       {
         text: "前言",
