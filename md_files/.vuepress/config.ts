@@ -204,10 +204,6 @@ export default defineUserConfig({
                 text: "常用公众号",
                 link: "/in_school/tutorial/common_public_accounts.md",
               },
-              {
-                text: "推荐的其它资源",
-                link: "/in_school/tutorial/recommand_others.md",
-              },
             ],
           },
         ],
