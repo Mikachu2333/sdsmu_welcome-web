@@ -1,16 +1,4 @@
-<p style="text-align:center;color:DeepPink;font-weight:bold;font-size:1.5em;">感觉有帮助？请我喝杯咖啡～</p>
-</br>
-<p style="text-align:center; color:red; font-size:1.5em;">☆*:.｡.o(≧▽≦)o.｡.:*☆</p>
-
-<script setup>
-import { withBase } from '@vuepress/client'
-</script>
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 10%;">
-  <img :src="withBase('/resources/pay/Ali_pay.png')" alt="支付宝" style="width:25%; object-fit: cover;" />
-  
-  <img :src="withBase('/resources/pay/Wechat_pay.png')" alt="微信支付" style="width:25%; object-fit: cover;" />
-</div>
+<Donate />
 
 # 特别感谢
 

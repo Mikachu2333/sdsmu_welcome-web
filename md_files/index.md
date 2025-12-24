@@ -24,18 +24,6 @@ features:
 tags: ["主页", "首页", "捐赠", "打赏", "捐助", "助力", "捐款", "赞助"]
 ---
 
-<p style="text-align:center; margin-top: 100px; font-size:1.2em;">力薄才疏，不免舛误，敬请绳愆纠缪。具体内容均以学校官方为准，如有变更恕不另行通知</p>
+<p style="text-align:center; margin-bottom: 100px; font-size:1.2em;">力薄才疏，不免舛误，敬请绳愆纠缪。具体内容均以学校官方为准，如有变更恕不另行通知</p>
 
-<p style="text-align:center; margin-top: 100px;color:DeepPink;font-weight:bold;font-size:1.5em;">感觉有帮助？请我喝杯咖啡～</p>
-</br>
-<p style="text-align:center; color:red; font-size:1.5em;">☆*:.｡.o(≧▽≦)o.｡.:*☆</p>
-
-<script setup>
-import { withBase } from '@vuepress/client'
-</script>
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 10%; margin-top: 40px;">
-  <img :src="withBase('/resources/pay/Ali_pay.png')" alt="支付宝" style="width:25%; object-fit: cover;" />
-  
-  <img :src="withBase('/resources/pay/Wechat_pay.png')" alt="微信支付" style="width:25%; object-fit: cover;" />
-</div>
+<Donate />

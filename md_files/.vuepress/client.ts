@@ -2,6 +2,7 @@ import { defineClientConfig } from "@vuepress/client";
 import { onMounted, onBeforeUnmount } from "vue";
 import FigureImage from "./components/FigureImage.vue";
 import InlineImage from "./components/InlineImage.vue";
+import Donate from "./components/Donate.vue";
 import "./style.css";
 
 const ANCHOR_OFFSET_PX = 96;
@@ -51,6 +52,7 @@ export default defineClientConfig({
   enhance({ app, router }) {
     app.component("FigureImage", FigureImage);
     app.component("InlineImage", InlineImage);
+    app.component("Donate", Donate);
     router.afterEach((to) => {
       applyFootnoteBackRefOffsetAndHighlight(to.hash);
     });

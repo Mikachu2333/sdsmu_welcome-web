@@ -56,4 +56,4 @@
 
 ## 其他
 
-其他未尽事宜请联系 [Mailto: LinkChou@yandex.com](Mailto:LinkChou@yandex.com)。
+其他未尽事宜请联系 [LinkChou@yandex.com](Mailto:LinkChou@yandex.com)。
