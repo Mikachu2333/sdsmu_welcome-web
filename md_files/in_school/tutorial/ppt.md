@@ -252,4 +252,4 @@ PPT 提供了在多屏幕下的批注与演讲者视图功能，在存在多个�
 
 #### 常用资源下载
 
-附常用图标见[压缩包](/resources/official_pics/official_pics.zip)
+附常用图标见[压缩包](/sdsmu_welcome-web/resources/official_pics/official_pics.zip)
