@@ -1,6 +1,6 @@
 <Donate />
 
-# 特别感谢
+## 特别感谢
 
 周大为
 
@@ -24,8 +24,8 @@
 
 ## 项目结构与内容
 
-::: note 注
-本栏内所有资料均已获编委（主编）授权。
+::: tip 注
+本栏内所有资料均已获编委会（主编）授权。
 :::
 
 [浙江大学本科新生指引](https://zjuers.com/welcome)
@@ -48,6 +48,10 @@
 
 [latexindent.pl](https://ctan.org/pkg/latexindent)
 
+[GitHub Copilot](https://github.com/features/copilot)、[Google Gemini 3 Pro](https://deepmind.google/models/gemini)
+
+[VuePress](https://vuepress.vuejs.org/zh/)、[VuePress 生态系统](https://ecosystem.vuejs.press/zh/)
+
 [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop)
 
 [始终（Liam Huang）](https://liam.page)
@@ -64,4 +68,12 @@
 
 [LaTeX 工作室](https://www.latexstudio.net)
 
-## ==以及其他所有为本指南、地图提供建议与改进意见的同学、教师等==
+## 发布
+
+[GitHub Pages](https://docs.github.com/en/pages)
+
+[Netlify](https://www.netlify.com)
+
+---
+
+<span style="font-size:2em; color:red; font-weight:bold; background:yellow">以及其他所有为本指南、地图提供建议与改进意见的同学、教师等</span>

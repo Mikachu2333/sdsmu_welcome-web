@@ -28,7 +28,7 @@
    - `info` 相关信息
    - `note` 提示
    - `important` 重要提示，少用
-3. 强调请参考 [`special_thanks.md`](md_files/doc_related/special_thanks.md#以及其他所有为本指南地图提供建议与改进意见的同学教师等)
+3. 强调请参考 [`thank_lists.md`](md_files/doc_related/thank_lists.md#以及其他所有为本指南地图提供建议与改进意见的同学教师等)
 4. 双下划线请参考 [`dormitory_fuyanshan.md`](/md_files/in_school/campus_fuyanshan/dormitory_fuyanshan.md#住宿注意事项)
 5. 文字标红参考 [`study.md`](/md_files/in_school/life/study.md#杂项)
 6. 手动书签跳转参考 [`life.md` 的脚注 1](/md_files/in_school/tutorial/life.md#新生信息查询线上报到) 与 [`school_readiness.md` 的脚注 8](/md_files/before_school/school_readiness.md#宿舍用品)

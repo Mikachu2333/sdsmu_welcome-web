@@ -45,7 +45,7 @@ export default defineUserConfig({
         text: "前言",
         collapsible: false,
         children: [
-          { text: "特别感谢", link: "/doc_related/special_thanks.md" },
+          { text: "致谢", link: "/doc_related/thank_lists.md" },
           { text: "版权与声明", link: "/doc_related/copyright_statements.md" },
           { text: "指南简介", link: "/doc_related/document_introduction.md" },
         ],
