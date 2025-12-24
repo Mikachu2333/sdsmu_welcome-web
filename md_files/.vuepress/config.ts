@@ -8,6 +8,7 @@ import { markdownStylizePlugin } from "@vuepress/plugin-markdown-stylize";
 import { markdownMathPlugin } from "@vuepress/plugin-markdown-math";
 
 export default defineUserConfig({
+  base: "/sdsmu_welcome-web/",
   bundler: viteBundler(),
   lang: "zh-CN",
   title: "山东第二医科大学指南 SDSMU-Companion",
