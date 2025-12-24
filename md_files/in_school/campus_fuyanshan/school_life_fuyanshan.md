@@ -49,10 +49,10 @@
 
 1. 多数同学常通过步行前往南街，有 KTV、电影院等娱乐场所
 2. 汇金街每逢农历初三、初八、十三、十八、廿三、廿八有集
-3. 前往市区的公交线路详参见[^free_bus]小节
+3. 前往市区的公交线路详参见[此章节](/in_school/tutorial/others.md#公交信息与乘车指南)
 4. 文体中心（位置见[浮烟山校区整体地图](/in_school/campus_fuyanshan/maps/map_full.md)）内有羽毛球馆、篮球馆（两者互斥）、健身房，还有**游泳馆**等[^1]
 
-[^1]: 具体收费标准及预约方式见[^sports_center_book]，开放时间见下表。
+[^1]: 具体收费标准及预约方式见[此处](/in_school/tutorial/life.md#文体中心预约教程)，开放时间见下表。
 
 <span id="sports_center_operating_hours"></span>
 

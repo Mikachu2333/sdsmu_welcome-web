@@ -1,6 +1,6 @@
 ## 学校 App
 
-1. [山二医 App](http://ydxy.sdsmu.edu.cn/mobileapi_ydxy/open/goDownload)
+1. [山二医 App](http://ydxy.sdsmu.edu.cn/mobileapi_ydxy/open/goDownload)<span id="sdsmu_app"></span>
 2. 大白 U 帮（浮烟山校区洗澡）
 3. 人卫（考试）
 4. 知到（网课、考试）

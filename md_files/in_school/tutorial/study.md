@@ -144,7 +144,7 @@
 在临近期末考试时，因考试教室占用等原因查询结果可能不准确
 :::
 
-1. 根据下文[^cas_system]的 CAS 认证系统登录教程，登录山二医 app（下载链接见[^sdsmu_app]）
+1. 根据 [CAS 认证系统登录教程](/in_school/tutorial/study.md#cas-资源访问控制系统校内-vpn)，登录山二医 app（下载链接[见此](/in_school/tutorial/common_app.md#sdsmu_app)）
 2. 点击下方菜单栏“应用”→ 空闲教室查询
 3. 点击右上角“〉”按钮 → 根据自己的需求进行筛选
 
@@ -177,7 +177,7 @@
 ## <span style="border-bottom:3px double black;">教务系统</span>
 
 ::: warning
-仅限校内访问，如需在外使用教务系统，参见[^cas_system]条目
+仅限校内访问，如需在外使用教务系统，参见[CAS 系统](/in_school/tutorial/study.md#cas-资源访问控制系统校内-vpn)条目
 :::
 
 1. 官网：[https://jwgl.sdsmu.edu.cn$^㊕$](https://jwgl.sdsmu.edu.cn)
@@ -245,7 +245,7 @@
    3. → 在“学风建设”类选择“学生缓考审批表”（或直接搜索“缓考”）
 2. 在教务处下载《[山东第二医科大学学生缓考审批表](https://jwch.sdsmu.edu.cn/_upload/article/files/f7/d0/c172c4f74eecba307f700cde1a21/99599310-0254-48be-adc5-fcafa99e7341.doc)》，打印 3 份并按照要求填写完毕
 3. 填写教务系统（详细步骤如下）
-   1. 进入教务系统（仅校园网，详情参见[^academic_affairs_system]）
+   1. 进入教务系统（仅校园网，详情[见此](/in_school/tutorial/study.md#教务系统)）
    2. 点击左侧菜单“考试报名”→“我的申请”→“缓考申请”
    3. → 选择“学年学期”和“活动名称”后，直接点击“搜索”（不要填写科目名称）
    4. → 在弹出的菜单中选择缓考科目并填写申请[^3]
