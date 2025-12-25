@@ -216,6 +216,10 @@ export default defineUserConfig({
         text: "后记",
         link: "/doc_related/epilogue.md",
       },
+      {
+        text: "更新日志",
+        link: "/CHANGELOG.md",
+      },
     ],
   }),
 
