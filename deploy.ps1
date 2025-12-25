@@ -1,36 +1,34 @@
-[System.Console]::OutputEncoding = [System.Console]::InputEncoding = [System.Text.Encoding]::UTF8
-
-# 遇到错误时停止执行
+# Stop execution on error
 $ErrorActionPreference = "Stop"
 
-# 1. 构建项目
-Write-Host "正在构建项目..."
+# 1. Build project
+Write-Host "Building project..."
 npm run docs:build
 
-# 2. 进入构建输出目录
+# 2. Enter build output directory
 $distPath = "md_files/.vuepress/dist"
 if (-not (Test-Path $distPath)) {
-    Write-Error "构建目录 $distPath 不存在！"
+    Write-Error "Build directory $distPath does not exist!"
     exit 1
 }
 Push-Location $distPath
 
-# 3. 初始化临时 Git 仓库并提交
-Write-Host "正在提交构建产物..."
+# 3. Initialize temporary Git repository and commit
+Write-Host "Committing build artifacts..."
 git init
 git-config-user.bat
 git add -A
 git commit -m "deploy: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 
-# 4. 强制推送到远程 gh-pages 分支
-# 注意：这里使用了 HTTPS 链接，如果需要 SSH 请自行修改
+# 4. Force push to remote gh-pages branch
+# Note: Using HTTPS link. Modify if SSH is needed.
 $repoUrl = "https://github.com/Mikachu2333/sdsmu_welcome-web.git"
-Write-Host "正在推送到 $repoUrl 的 gh-pages 分支..."
+Write-Host "Pushing to gh-pages branch of $repoUrl..."
 
-# 将本地的 master (或 main) 分支推送到远程的 gh-pages 分支
+# Push local master (or main) branch to remote gh-pages branch
 git push -f $repoUrl master:gh-pages
 
 # 5. 恢复目录位置
 Pop-Location
 
-Write-Host "部署完成！"
+Write-Host "Deployment complete!"
