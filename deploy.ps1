@@ -1,3 +1,5 @@
+[System.Console]::OutputEncoding = [System.Console]::InputEncoding = [System.Text.Encoding]::UTF8
+
 # 遇到错误时停止执行
 $ErrorActionPreference = "Stop"
 
