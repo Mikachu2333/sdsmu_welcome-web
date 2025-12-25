@@ -6,7 +6,17 @@
 
 本项目旨在将原有的 pdf 版本线上化，让不同设备也可以轻松浏览相同的内容。
 
-本指南内容部分仍然遵循 CC BY SA 4.0 LICENSE，代码部分遵循 MIT 许可。
+---
+
+本指南的内容部分仍然遵循 CC BY SA 4.0 LICENSE，代码部分遵循 MIT 许可。
+
+The code of this project is licensed under the MIT License, and the content is licensed under CC BY SA 4.0 LICENSE.
+
+## Thanks
+
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" />
+</a>
 
 ## Markdown 文件简要编辑说明
 

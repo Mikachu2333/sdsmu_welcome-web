@@ -21,6 +21,9 @@ features:
   - title: 现代化
     details: 可在电脑、手机上完美显示，规避了原来PDF版本难以查看的问题
 
+footer: This site is powered by <a href="https://www.netlify.com/">Netlify</a>.
+footerHtml: true
+
 tags: ["主页", "首页", "捐赠", "打赏", "捐助", "助力", "捐款", "赞助"]
 ---
 

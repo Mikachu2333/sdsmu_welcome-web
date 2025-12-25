@@ -20,6 +20,8 @@ import { withBase } from '@vuepress/client'
     justify-content: center;
     align-items: center;
     gap: 10%;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .donate-img {
