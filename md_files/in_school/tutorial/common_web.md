@@ -82,8 +82,9 @@
 
 ### 其它
 
-1. 全国大学生社会实践管理服务平台：[https://shsj.5idream.net](https://shsj.5idream.net)
-2. 青鸟计划：详见公众号“青鸟计划”及学校下发的相关文件说明
+1. [国家卫健委](https://www.nhc.gov.cn/)
+2. 全国大学生社会实践管理服务平台：[https://shsj.5idream.net](https://shsj.5idream.net)
+3. 青鸟计划：详见公众号“青鸟计划”及学校下发的相关文件说明
 
 ## 学习与考试
 
@@ -94,14 +95,15 @@
 
 ## 资格水平考试
 
-1. 全国大学英语四、六级考试：[https://cet-kw.neea.edu.cn](https://cet-kw.neea.edu.cn)
-2. 国家普通话水平测试：[https://www.cltt.org](https://www.cltt.org)
-3. 全国计算机水平考试：[https://ncre.neea.edu.cn](https://ncre.neea.edu.cn)
-4. 国家医学考试网：[https://www1.nmec.org.cn](https://www1.nmec.org.cn)
-5. 中小学教师资格考试：[https://ntce.neea.edu.cn](https://ntce.neea.edu.cn)
-6. 托福：[https://www.toefl.cn](https://www.toefl.cn)
-7. 雅思：[https://www.chinaielts.org](https://www.chinaielts.org)
-8. 日本语能力测试：[https://jlpt.neea.cn/index.do](https://jlpt.neea.cn/index.do)
+1. 执业医师资格考试：[2024 年版临床、口腔、公共卫生执业（助理）医师和乡村全科执业助理医师《医师资格考试大纲》](https://www.nhc.gov.cn/wjw/c100378/202312/e8d6ed3769b5468bb5d53e86b8b19379/files/1733999151110_90227.zip)
+2. 全国大学英语四、六级考试：[https://cet-kw.neea.edu.cn](https://cet-kw.neea.edu.cn)
+3. 国家普通话水平测试：[https://www.cltt.org](https://www.cltt.org)
+4. 全国计算机水平考试：[https://ncre.neea.edu.cn](https://ncre.neea.edu.cn)
+5. 国家医学考试网：[https://www1.nmec.org.cn](https://www1.nmec.org.cn)
+6. 中小学教师资格考试：[https://ntce.neea.edu.cn](https://ntce.neea.edu.cn)
+7. 托福：[https://www.toefl.cn](https://www.toefl.cn)
+8. 雅思：[https://www.chinaielts.org](https://www.chinaielts.org)
+9. 日本语能力测试：[https://jlpt.neea.cn/index.do](https://jlpt.neea.cn/index.do)
 
 ## 学籍查询
 
