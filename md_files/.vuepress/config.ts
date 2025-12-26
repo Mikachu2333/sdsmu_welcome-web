@@ -15,6 +15,7 @@ export default defineUserConfig({
   description: "321指南",
 
   head: [
+    ["link", { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" }],
     [
       "link",
       {
@@ -40,13 +41,17 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     repo: "https://github.com/Mikachu2333/sdsmu_welcome-web",
+    logo: "/favicon.svg",
     sidebar: [
       {
         text: "前言",
         collapsible: false,
         children: [
           { text: "致谢", link: "/doc_related/thank_lists.md" },
-          { text: "版权与声明", link: "/doc_related/copyright_statements.md" },
+          {
+            text: "版权与声明",
+            link: "/doc_related/copyright_statements.md",
+          },
           { text: "指南简介", link: "/doc_related/document_introduction.md" },
         ],
       },
@@ -182,7 +187,10 @@ export default defineUserConfig({
           {
             text: "其它",
             children: [
-              { text: "不便分类的教程", link: "/in_school/tutorial/others.md" },
+              {
+                text: "不便分类的教程",
+                link: "/in_school/tutorial/others.md",
+              },
               {
                 text: "PPT制作指南",
                 link: "/in_school/tutorial/ppt.md",
@@ -207,7 +215,7 @@ export default defineUserConfig({
               {
                 text: "其它推荐的资源",
                 link: "/in_school/tutorial/recommand_res.md",
-              }
+              },
             ],
           },
         ],
