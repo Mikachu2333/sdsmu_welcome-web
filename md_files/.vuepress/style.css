@@ -161,3 +161,60 @@ main.vp-page img {
     background-color: transparent;
   }
 }
+
+/* 增加嵌套列表的缩进 */
+.theme-default-content ol ol,
+.theme-default-content ul ol,
+.theme-default-content ol ul,
+.theme-default-content ul ul,
+main.vp-page > [vp-content] ol ol,
+main.vp-page > [vp-content] ul ol,
+main.vp-page > [vp-content] ol ul,
+main.vp-page > [vp-content] ul ul {
+  padding-left: 2em;
+}
+
+/* 自定义有序列表序号格式 */
+.theme-default-content ol,
+main.vp-page > [vp-content] ol {
+  list-style: none;
+  counter-reset: ol-counter;
+}
+
+.theme-default-content ol li,
+main.vp-page > [vp-content] ol li {
+  counter-increment: ol-counter;
+  position: relative;
+}
+
+/* Level 1: 1. */
+.theme-default-content ol > li::before,
+main.vp-page > [vp-content] ol > li::before {
+  content: counter(ol-counter) ".";
+  position: absolute;
+  left: -2.5em;
+  width: 2em;
+  text-align: right;
+  color: var(--vp-c-text-1);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Level 2: (1). */
+.theme-default-content ol ol > li::before,
+main.vp-page > [vp-content] ol ol > li::before {
+  content: "(" counter(ol-counter) ")";
+  left: -3.5em;
+  width: 3em;
+}
+
+/* Level 3: <1>. */
+.theme-default-content ol ol ol > li::before,
+main.vp-page > [vp-content] ol ol ol > li::before {
+  content: "<" counter(ol-counter) ">";
+}
+
+/* Level 4: [1]. */
+.theme-default-content ol ol ol ol > li::before,
+main.vp-page > [vp-content] ol ol ol ol > li::before {
+  content: "[" counter(ol-counter) "]";
+}
