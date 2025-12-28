@@ -174,7 +174,7 @@
 4. 禁止在图书馆内谈恋爱、亲嘴
 5. 禁止在图书馆占座，馆内**每天清书**
 
-## <span style="border-bottom:3px double black;">教务系统</span>
+## <span style="border-bottom:3px double red;">教务系统</span>
 
 ::: warning
 仅限校内访问，如需在外使用教务系统，参见[CAS 系统](/in_school/tutorial/study.md#cas-资源访问控制系统校内-vpn)条目
