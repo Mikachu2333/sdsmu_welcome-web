@@ -205,6 +205,10 @@ export default defineUserConfig({
                 link: "/in_school/tutorial/common_web.md",
               },
               {
+                text: "各级组织信息汇总",
+                link: "/in_school/summary/community_summary.md",
+              },
+              {
                 text: "常用软件",
                 link: "/in_school/tutorial/common_app.md",
               },
