@@ -181,8 +181,8 @@ main.vp-page > [vp-content] ol {
   counter-reset: ol-counter;
 }
 
-.theme-default-content ol li,
-main.vp-page > [vp-content] ol li {
+.theme-default-content ol > li,
+main.vp-page > [vp-content] ol > li {
   counter-increment: ol-counter;
   position: relative;
 }
@@ -217,4 +217,9 @@ main.vp-page > [vp-content] ol ol ol > li::before {
 .theme-default-content ol ol ol ol > li::before,
 main.vp-page > [vp-content] ol ol ol ol > li::before {
   content: "[" counter(ol-counter) "]";
+}
+
+/* 增加脚注与正文的间距 */
+.footnotes {
+  margin-top: 4rem;
 }

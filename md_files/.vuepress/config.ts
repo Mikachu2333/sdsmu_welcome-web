@@ -231,6 +231,10 @@ export default defineUserConfig({
       {
         text: "更新日志",
         link: "/CHANGELOG.md",
+        children: [
+          { text: "更新日志（现 Web 版本）", link: "/CHANGELOG.md" },
+          { text: "更新日志（旧 TeX 版本）", link: "/CHANGELOG_old.md" },
+        ],
       },
     ],
   }),
