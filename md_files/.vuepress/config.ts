@@ -46,6 +46,7 @@ export default defineUserConfig({
       {
         text: "前言",
         collapsible: false,
+        link: "/doc_related/thank_lists.md",
         children: [
           { text: "致谢", link: "/doc_related/thank_lists.md" },
           {
@@ -61,6 +62,7 @@ export default defineUserConfig({
       },
       {
         text: "新生入学",
+        collapsible: false,
         children: [
           {
             text: "入学准备",
@@ -90,6 +92,7 @@ export default defineUserConfig({
       },
       {
         text: "浮烟山校区",
+        collapsible: false,
         children: [
           {
             text: "校区概况",
@@ -97,6 +100,8 @@ export default defineUserConfig({
           },
           {
             text: "地图",
+            collapsible: false,
+            link: "/in_school/campus_fuyanshan/maps/map_full.md",
             children: [
               {
                 text: "整体地图",
@@ -128,6 +133,8 @@ export default defineUserConfig({
       },
       {
         text: "虞河校区",
+        collapsible: false,
+        link: "/in_school/campus_yuhe/summary_yuhe.md",
         children: [
           {
             text: "校区概况",
@@ -175,6 +182,7 @@ export default defineUserConfig({
       },
       {
         text: "教程",
+        collapsible: false,
         children: [
           {
             text: "生活类教程",
@@ -186,6 +194,7 @@ export default defineUserConfig({
           },
           {
             text: "其它",
+            collapsible: false,
             children: [
               {
                 text: "不便分类的教程",
@@ -199,6 +208,7 @@ export default defineUserConfig({
           },
           {
             text: "通用信息汇总",
+            collapsible: false,
             children: [
               {
                 text: "常用网站",
@@ -230,6 +240,7 @@ export default defineUserConfig({
       },
       {
         text: "更新日志",
+        collapsible: true,
         link: "/CHANGELOG.md",
         children: [
           { text: "更新日志（现 Web 版本）", link: "/CHANGELOG.md" },
