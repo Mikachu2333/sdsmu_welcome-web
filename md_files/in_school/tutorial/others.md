@@ -478,7 +478,7 @@
 
 ### Windows 还是 Mac
 
-如果以下情景有<span style="color:red;font-weight:bold">任意一条</span>命中了你的需求，**请选择 Windows**
+如果以下情景有<span style="color:red;font-weight:bold">任意一条</span>命中了你的需求或情景，<span style="color:red;font-weight:bold">请选择 Windows</span>
 
 - 希望参与科研活动，或协助教师处理资料
 - 是班长/团支，或社团/学生会主要成员（频繁的办公需求，部分办公软件对 Mac 的支持极差）
