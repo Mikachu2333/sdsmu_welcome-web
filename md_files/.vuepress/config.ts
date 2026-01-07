@@ -20,21 +20,21 @@ export default defineUserConfig({
       "link",
       {
         rel: "stylesheet",
-        href: "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/400.min.css",
+        href: "https://cdn.jsdmirror.cn/npm/@fontsource/noto-sans-sc@5.2.8/400.min.css",
       },
     ],
     [
       "link",
       {
         rel: "stylesheet",
-        href: "https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/600.min.css",
+        href: "https://cdn.jsdmirror.cn/npm/@fontsource/noto-sans-sc@5.2.8/600.min.css",
       },
     ],
     [
       "link",
       {
         rel: "stylesheet",
-        href: "https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.2.8/index.min.css",
+        href: "https://cdn.jsdmirror.cn/npm/@fontsource/jetbrains-mono@5.2.8/index.min.css",
       },
     ],
   ],

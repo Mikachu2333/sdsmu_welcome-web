@@ -4,7 +4,7 @@
     "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "MiSans L3",
     "HarmonyOS Sans", "Segoe UI", sans-serif;
   --font-family-code: "JetBrains Mono", "Fira Code", "Consolas", "Monaco",
-    "Andale Mono", "Ubuntu Mono", monospace;
+    "Andale Mono", "Ubuntu Mono", monospace, sans-serif;
 
   /* VuePress variables */
   --c-brand: #3451b2; /* Indigo from VitePress config */
