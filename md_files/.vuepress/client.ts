@@ -1,5 +1,6 @@
 import { defineClientConfig } from "@vuepress/client";
 import { onMounted, onBeforeUnmount } from "vue";
+import FileDownload from "./components/FileDownload.vue";
 import FigureImage from "./components/FigureImage.vue";
 import InlineImage from "./components/InlineImage.vue";
 import Donate from "./components/Donate.vue";
@@ -50,6 +51,7 @@ function applyFootnoteBackRefOffsetAndHighlight(
 
 export default defineClientConfig({
   enhance({ app, router }) {
+    app.component("FileDownload", FileDownload);
     app.component("FigureImage", FigureImage);
     app.component("InlineImage", InlineImage);
     app.component("Donate", Donate);
