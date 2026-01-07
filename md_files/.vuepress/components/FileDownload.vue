@@ -1,7 +1,7 @@
 <template>
     <div class="file-download-container">
         <span class="file-name">{{ name }}</span>
-        <a :href="withBase(href)" :download="downloadName || true" target="_blank" class="download-btn">
+        <a :href="withBase(href)" :download="downloadName || name" target="_blank" class="download-btn">
             下载
         </a>
     </div>

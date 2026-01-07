@@ -10,7 +10,7 @@
 ## 学生会校级格式
 
 1. 用途：校级格式是用于校内各类**正式文稿**（如活动通知、综测条例、学生会文件等）的标准
-2. 字体下载：[公文字体包.zip](/sdsmu_welcome-web/resources/sundry/公文字体包.zip)
+2. 公文字体下载：<FileDownload name="公文字体包.zip" href="/resources/sundry/公文字体包.zip" />
 3. 具体要求：
 
    1. 纸张大小：A4 纸
