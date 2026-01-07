@@ -50,6 +50,7 @@
 3. 资源访问控制系统（VPN）：[https://webvpn.sdsmu.edu.cn](https://webvpn.sdsmu.edu.cn)
 4. 统一身份认证平台：[https://cas.sdsmu.edu.cn](https://cas.sdsmu.edu.cn)
 5. 网上办事大厅（事务中心）：[https://portal.sdsmu.edu.cn$^㊕$](https://portal.sdsmu.edu.cn)
+6. 查收查引系统：[http://cx.wfyxy.qfclo.com:2222/index.html](http://cx.wfyxy.qfclo.com:2222/index.html)
 
 ## 大创、竞赛等
 
