@@ -1,1 +1,1 @@
-<FigureImage src="/resources/date/calendar.jpg" title="校历" downloadLink="/resources/date/calendar.jpg" />
+<FigureImage src="/resources/date/校历.webp" title="校历" downloadLink="/resources/date/校历.webp" />
