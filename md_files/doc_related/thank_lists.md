@@ -12,7 +12,10 @@
 
 [山东第二医科大学党委宣传部](https://xchb.sdsmu.edu.cn)
 
-[山东第二医科大学频道](https://pd.qq.com/s/7mekdr5ve)
+<QrCodeBlock
+  text="山东第二医科大学频道"
+  qrcode="/resources/qrcodes/山东第二医科大学频道.jpg"
+/>
 
 ## 图片处理
 
@@ -40,9 +43,15 @@
 
 ## 宣传发布
 
-[山东第二医科大学频道](https://pd.qq.com/s/7mekdr5ve)
+<QrCodeBlock
+  text="山东第二医科大学频道"
+  qrcode="/resources/qrcodes/山东第二医科大学频道.jpg"
+/>
 
-[闪医 Spark Medicine](http://weixin.qq.com/r/mp/Vh0eBqPE8v6Nredl90hE)
+<QrCodeBlock
+  text="闪医 Spark Medicine"
+  qrcode="/resources/qrcodes/闪医.jpg"
+/>
 
 [dexbug学习空间（护理类）](https://www.dexbug.com)
 

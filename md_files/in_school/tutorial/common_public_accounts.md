@@ -1,3 +1,4 @@
+<!-- 微信公众号头像下载API： `https://open.weixin.qq.com/qr/code?username=XXX` -->
 ::: note 说明
 
 1. 本篇内容的排名不分先后
@@ -5,84 +6,88 @@
 
 :::
 
-## 学校公众号
-
-1. 山东第二医科大学
-2. 山东第二医科大学学生之家
-3. 山东第二医科大学财务处
-4. 山二医临床学子
-5. 山东第二医科大学附属医院服务号
-6. 山东第二医科大学图书馆
-7. 山东第二医科大学智慧校园
-8. 山东第二医科大学报
-9. 山二医学生会
-10. 青春山二医
-11. 山二医就业服务
-12. 平安山二医
-13. 山二医学工助手
-14. 青春山东
-15. 山二医图管会
-16. 山东就业创业导航
-17. 山二医附院健康管理中心
-18. 山二医文体中心
-19. 潍坊市人民医院
-20. 潍坊市免费避孕药具服务平台
-21. 潍坊微警务
-22. 校务行（查成绩、学籍证明等）
-23. 长江雨课堂（上课课件）
-24. 对分易（上课课件、部分课程的资料）
-25. 海享租（空调遥控）
-26. 流云海印（自助打印）
-
-::: note
+::: important
 
 1. 感谢“闪医 Spark Medicine 编辑部”各位同学建议与宣发！
 2. 感谢“中华神兽之家”中各位同学对以下分享内容的贡献！
 
 :::
 
+::: warning
+因微信限制，小程序二维码无法被非小程序开发者生成，请通过名称搜索，或在使用时临时扫码。
+:::
+
+## 学校公众号 / 服务号 / 小程序
+
+1. <QrCodeLink text="山东第二医科大学" qrcode="/resources/qrcodes/山东第二医科大学.jpg"/>
+2. <QrCodeLink text="山东第二医科大学学生之家" qrcode="/resources/qrcodes/山东第二医科大学学生之家.jpg"/>
+3. <QrCodeLink text="山东第二医科大学财务处" qrcode="/resources/qrcodes/山东第二医科大学财务处.jpg"/>
+4. <QrCodeLink text="山二医临床学子" qrcode="/resources/qrcodes/山二医临床学子.jpg"/>
+5. <QrCodeLink text="山东第二医科大学附属医院服务号" qrcode="/resources/qrcodes/山东第二医科大学附属医院服务号.jpg"/>
+6. <QrCodeLink text="山东第二医科大学图书馆" qrcode="/resources/qrcodes/山东第二医科大学图书馆.jpg"/>
+7. <QrCodeLink text="山东第二医科大学智慧校园" qrcode="/resources/qrcodes/山东第二医科大学智慧校园.jpg"/>
+8. <QrCodeLink text="山东第二医科大学报" qrcode="/resources/qrcodes/山东第二医科大学智慧校园.jpg"/>
+9. <QrCodeLink text="山东第二医科大学学生会" qrcode="/resources/qrcodes/山东第二医科大学学生会.jpg"/>
+10. <QrCodeLink text="青春山东" qrcode="/resources/qrcodes/青春山东.jpg"/>
+11. <QrCodeLink text="青春山二医" qrcode="/resources/qrcodes/青春山二医.jpg"/>
+12. <QrCodeLink text="山二医就业服务" qrcode="/resources/qrcodes/山二医就业服务.jpg"/>
+13. <QrCodeLink text="平安山二医" qrcode="/resources/qrcodes/平安山二医.jpg"/>
+14. <QrCodeLink text="山二医图管会" qrcode="/resources/qrcodes/山二医图管会.jpg"/>
+15. <QrCodeLink text="山东就业创业导航" qrcode="/resources/qrcodes/山东就业创业导航.jpg"/>
+16. <QrCodeLink text="山二医附院健康管理中心" qrcode="/resources/qrcodes/山二医附院健康管理中心.jpg"/>
+17. <QrCodeLink text="山二医文体中心" qrcode="/resources/qrcodes/山二医文体中心.jpg"/>
+18. <QrCodeLink text="山二医学工助手" qrcode="/resources/qrcodes/山二医学工助手.jpg"/>
+19. <QrCodeLink text="潍坊市人民医院" qrcode="/resources/qrcodes/潍坊市人民医院.jpg"/>
+20. <QrCodeLink text="潍坊市免费避孕药具服务平台" qrcode="/resources/qrcodes/潍坊市免费避孕药具服务平台.jpg"/>
+21. <QrCodeLink text="潍坊微警务" qrcode="/resources/qrcodes/潍坊微警务.jpg"/>
+22. 校务行（查成绩、学籍证明等）
+23. <QrCodeLink text="长江雨课堂" qrcode="/resources/qrcodes/长江雨课堂.jpg"/>（上课课件）
+24. <QrCodeLink text="对分易" qrcode="/resources/qrcodes/对分易.jpg"/>（上课课件、部分课程的资料）
+25. 海享租（空调遥控）
+26. 印掌门云印（自助打印机，贵）
+
 ## 考研公众号
 
-1. 潍坊市招生考试研究院
-2. 闪医 Spark Medicine（咱校学长创建的公众号，有很多针对临床专业的期末复习资料）
-3. 闪研 Spark Time
-4. 银城医考/医客亮哥/天天师兄
-5. 考研政治徐涛/腿姐考研政治课堂
-6. 小凯的医学之路（考研资料）
-7. 一只医学小书包（考研资料）
-8. 晓艳工作室（英语学习）
-9. 诚毅医学考研（口腔考研信息）
-10. 考研英语外刊阅读（英语外刊节选）
-11. 医路资料社（学校社团自建）
-12. 拉钩仙人（本校同学创建）
+1. <QrCodeLink text="潍坊市招生考试研究院" qrcode="/resources/qrcodes/潍坊市招生考试研究院.jpg"/>
+2. <QrCodeLink text="闪医 Spark Medicine" qrcode="/resources/qrcodes/闪医.jpg"/>（咱校学长创建的公众号，有很多针对临床专业的期末复习资料）
+3. <QrCodeLink text="闪研 Spark Time" qrcode="/resources/qrcodes/闪研.jpg"/>
+4. <QrCodeLink text="银城医考" qrcode="/resources/qrcodes/银城医考.jpg"/> / <QrCodeLink text="医客亮哥" qrcode="/resources/qrcodes/医客亮哥.jpg"/> / <QrCodeLink text="天天师兄" qrcode="/resources/qrcodes/天天师兄.jpg"/>
+5. <QrCodeLink text="考研政治徐涛" qrcode="/resources/qrcodes/考研政治徐涛.jpg"/> / <QrCodeLink text="腿姐考研政治课堂" qrcode="/resources/qrcodes/腿姐考研政治课堂.jpg"/>
+6. <QrCodeLink text="小凯的医学之路" qrcode="/resources/qrcodes/小凯的医学之路.jpg"/>（考研资料）
+7. <QrCodeLink text="一只医学小书包" qrcode="/resources/qrcodes/一只医学小书包.jpg"/>（考研资料）
+8. <QrCodeLink text="晓艳工作室" qrcode="/resources/qrcodes/晓艳工作室.jpg"/>（英语学习）
+9. <QrCodeLink text="诚毅医考" qrcode="/resources/qrcodes/诚毅医考.jpg"/>（口腔考研信息）
+10. <QrCodeLink text="考研英语外刊阅读" qrcode="/resources/qrcodes/考研英语外刊阅读.jpg"/>（英语外刊节选）
+11. <QrCodeLink text="医路资料社" qrcode="/resources/qrcodes/医路资料社.jpg"/>
+12. <QrCodeLink text="拉钩仙人" qrcode="/resources/qrcodes/拉钩仙人.jpg"/>
 
 ## 科研公众号
 
-1. 期刊分区表（期刊最新分区）
-2. 浙江图书馆（文献检索）
-3. CARSI 资源共享服务（文献查询）
-4. 实验老司机（科研操作）
-5. 科研者之家（生信分析、绘图）
-6. 梅斯医学（查影响因子）
-7. ReadPaper 论文阅读（自动论文翻译）
-8. SCIPainter（科研绘图）
-9. 特膳食品功能性原料开发（营养学前沿）
-10. 生信与人工智能（生信入门）
-11. 科研综述（前沿综述梳理）
+1. <QrCodeLink text="期刊分区表" qrcode="/resources/qrcodes/期刊分区表.jpg"/>（期刊最新分区）
+2. <QrCodeLink text="浙江图书馆" qrcode="/resources/qrcodes/浙江图书馆.jpg"/>（文献检索）
+3. <QrCodeLink text="CARSI 资源共享服务" qrcode="/resources/qrcodes/CARSI.jpg"/>（文献查询）
+4. <QrCodeLink text="实验老司机" qrcode="/resources/qrcodes/实验老司机.jpg"/>（科研操作）
+5. <QrCodeLink text="科研者之家" qrcode="/resources/qrcodes/科研者之家.jpg"/>（生信分析、绘图）
+6. <QrCodeLink text="梅斯医学" qrcode="/resources/qrcodes/梅斯医学.jpg"/>（查影响因子）
+7. <QrCodeLink text="ReadPaper 论文阅读" qrcode="/resources/qrcodes/ReadPaper.jpg"/>（自动论文翻译）
+8. <QrCodeLink text="SCIPainter" qrcode="/resources/qrcodes/SCIPainter.jpg"/>（科研绘图）
+9. <QrCodeLink text="特膳食品功能性原料开发" qrcode="/resources/qrcodes/特膳食品功能性原料开发.jpg"/>（营养学前沿）
+10. <QrCodeLink text="生信与人工智能" qrcode="/resources/qrcodes/生信与人工智能.jpg"/>（生信入门）
+11. <QrCodeLink text="科研综述" qrcode="/resources/qrcodes/科研综述.jpg"/>（前沿综述梳理）
 
 ## 知识类公众号
 
 ### 科技类
 
-1. 差评 X.PIN（当前的热门科技话题）
-2. 笔吧测评室（笔记本购买推荐）
+1. <QrCodeLink text="差评 X.PIN" qrcode="/resources/qrcodes/差评.jpg"/>（当前的热门科技话题）
+2. <QrCodeLink text="笔吧测评室" qrcode="/resources/qrcodes/笔吧测评室.jpg"/>（笔记本购买推荐）
 
 ### 科普类
 
-1. NPs & Gold（细菌、化学与生物领域交叉）
-2. 细胞世界（细胞生物学科普）
-3. 我爱生化（生化科普）
+1. <QrCodeLink text="NPs & Gold" qrcode="/resources/qrcodes/NPs-Gold.jpg"/>（细菌、化学与生物领域交叉）
+2. <QrCodeLink text="细胞世界" qrcode="/resources/qrcodes/细胞世界.jpg"/>（细胞生物学科普）
+3. <QrCodeLink text="我爱生化" qrcode="/resources/qrcodes/我爱生化.jpg"/>（生化科普）
 
 ## 其它公众号
 
-1. 中国信通院 CAICT（一证通查）
+1. <QrCodeLink text="中国信通院 CAICT" qrcode="/resources/qrcodes/中国信通院.jpg"/>（一证通查）
