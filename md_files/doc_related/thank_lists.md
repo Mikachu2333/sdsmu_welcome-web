@@ -70,7 +70,7 @@
 
 [LaTeX 工作室](https://www.latexstudio.net)
 
-## 发布
+## 部署
 
 [GitHub Pages](https://docs.github.com/en/pages)
 
