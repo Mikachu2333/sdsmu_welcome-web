@@ -1,34 +1,71 @@
 # Stop execution on error
 $ErrorActionPreference = "Stop"
 
-# 1. Build project
-Write-Host "Building project..."
-npm run docs:build
+function Exec {
+    param (
+        [ScriptBlock]$ScriptBlock,
+        [string]$ErrorMessage = "Command failed"
+    )
+    
+    # Execute the script block
+    & $ScriptBlock
+    
+    # Check the exit code of the last command
+    if ($LASTEXITCODE -ne 0) {
+        throw "$ErrorMessage (Exit code: $LASTEXITCODE)"
+    }
+}
 
-# 2. Enter build output directory
-$distPath = "md_files/.vuepress/dist"
-if (-not (Test-Path $distPath)) {
-    Write-Error "Build directory $distPath does not exist!"
+try {
+    # 1. Build project
+    Write-Host "Building project..." -ForegroundColor Cyan
+    Exec { npm run docs:build } "Build failed"
+
+    # 2. Enter build output directory
+    $distPath = "md_files/.vuepress/dist"
+    if (-not (Test-Path $distPath)) {
+        throw "Build directory $distPath does not exist!"
+    }
+    
+    # Save current location
+    Push-Location $distPath
+
+    try {
+        # 3. Initialize temporary Git repository and commit
+        Write-Host "Initializing temporary git repository..." -ForegroundColor Cyan
+        Exec { git init } "Git init failed"
+        
+        # Ensure we are on 'master' branch (Git 2.28+ might default to 'main')
+        Exec { git checkout -B master } "Failed to switch to master branch"
+
+        # Check for user config script
+        if (Get-Command "git-config-user.bat" -ErrorAction SilentlyContinue) {
+            Write-Host "Running git-config-user.bat..." -ForegroundColor Cyan
+            Exec { git-config-user.bat } "git-config-user.bat failed"
+        }
+        else {
+            Write-Host "Note: git-config-user.bat not found. Using current git configuration." -ForegroundColor Yellow
+        }
+
+        Write-Host "Committing build artifacts..." -ForegroundColor Cyan
+        Exec { git add -A } "Git add failed"
+        Exec { git commit -m "deploy: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" } "Git commit failed"
+
+        # 4. Force push to remote gh-pages branch
+        $repoUrl = "https://github.com/Mikachu2333/sdsmu_welcome-web.git"
+        Write-Host "Pushing to gh-pages branch of $repoUrl..." -ForegroundColor Cyan
+
+        # Push local master branch to remote gh-pages branch
+        Exec { git push -f $repoUrl master:gh-pages } "Git push failed"
+
+        Write-Host "Deployment complete successfully!" -ForegroundColor Green
+    }
+    finally {
+        # 5. Restore directory location
+        Pop-Location
+    }
+}
+catch {
+    Write-Error "DEPLOYMENT FAILED: $_"
     exit 1
 }
-Push-Location $distPath
-
-# 3. Initialize temporary Git repository and commit
-Write-Host "Committing build artifacts..."
-git init
-git-config-user.bat
-git add -A
-git commit -m "deploy: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
-
-# 4. Force push to remote gh-pages branch
-# Note: Using HTTPS link. Modify if SSH is needed.
-$repoUrl = "https://github.com/Mikachu2333/sdsmu_welcome-web.git"
-Write-Host "Pushing to gh-pages branch of $repoUrl..."
-
-# Push local master (or main) branch to remote gh-pages branch
-git push -f $repoUrl master:gh-pages
-
-# 5. 恢复目录位置
-Pop-Location
-
-Write-Host "Deployment complete!"

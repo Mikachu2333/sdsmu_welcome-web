@@ -74,3 +74,5 @@ npm run docs:build
 ```shell
 ./deploy.ps1
 ```
+
+移动目录后需要先移除之前的缓存，再 `npm install`，最后运行 `deploy.ps1` 脚本，否则会报错
