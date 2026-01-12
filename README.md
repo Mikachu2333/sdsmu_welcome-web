@@ -47,11 +47,11 @@ The code of this project is licensed under the MIT License, and the content is l
 
 1. **QrCodeLink** - 行内二维码组件，鼠标悬停显示二维码
    - 用法：`<QrCodeLink text="显示文本" qrcode="/path/to/qrcode.jpg" href="可选链接"/>`
-   - 示例参考：[`common_public_accounts.md`](/md_files/in_school/tutorial/common_public_accounts.md)
+   - 示例参考：[`common_public_accounts.md`](md_files/in_school/tutorial/common_public_accounts.md)
 
 2. **QrCodeBlock** - 独立行二维码组件，鼠标悬停显示二维码
    - 用法：`<QrCodeBlock text="显示文本" qrcode="/path/to/qrcode.jpg" href="可选链接"/>`
-   - 示例参考：[`thank_lists.md`](/md_files/doc_related/thank_lists.md#宣传发布)
+   - 示例参考：[`thank_lists.md`](md_files/doc_related/thank_lists.md#宣传发布)
 
 3. **FileDownload** - 文件下载按钮组件
    - 用法：`<FileDownload text="按钮文本" file="/path/to/file.pdf" filename="下载文件名.pdf"/>`
@@ -76,11 +76,11 @@ The code of this project is licensed under the MIT License, and the content is l
    - `note` 提示
    - `important` 重要提示，少用
 3. 强调请参考 [`thank_lists.md` 的最后](md_files/doc_related/thank_lists.md)
-4. 双下划线请参考 [`dormitory_fuyanshan.md`](/md_files/in_school/campus_fuyanshan/dormitory_fuyanshan.md#住宿注意事项)
-5. 文字标红参考 [`study.md`](/md_files/in_school/life/study.md#杂项)
-6. 手动书签跳转参考 [`life.md` 的脚注 1](/md_files/in_school/tutorial/life.md#新生信息查询线上报到) 与 [`school_readiness.md` 的脚注 8](/md_files/before_school/school_readiness.md#宿舍用品)
+4. 双下划线请参考 [`dormitory_fuyanshan.md`](md_files/in_school/campus_fuyanshan/dormitory_fuyanshan.md#住宿注意事项)
+5. 文字标红参考 [`study.md`](md_files/in_school/life/study.md#杂项)
+6. 手动书签跳转参考 [`life.md` 的脚注 1](md_files/in_school/tutorial/life.md#新生信息查询线上报到) 与 [`school_readiness.md` 的脚注 8](md_files/before_school/school_readiness.md#宿舍用品)
 7. 行内图片链接请参考 [`life.md` 链接的浮烟山校区部分](md_files/in_school/tutorial/life.md#浴室预约与使用)
-8. 行内二维码参考 [`common_public_accounts.md`](/md_files/in_school/tutorial/common_public_accounts.md)，行间二维码参考 [`thank_lists.md`](/md_files/doc_related/thank_lists.md#宣传发布)
+8. 行内二维码参考 [`common_public_accounts.md`](md_files/in_school/tutorial/common_public_accounts.md)，行间二维码参考 [`thank_lists.md`](md_files/doc_related/thank_lists.md#宣传发布)
 
 ### 写作风格说明
 

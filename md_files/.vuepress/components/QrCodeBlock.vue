@@ -45,27 +45,30 @@ const scaledHeight = ref<number | null>(null)
 const horizontalOffset = ref('50%')
 const transformX = ref('-50%')
 
+// 常量定义
+const TOOLTIP_HEIGHT = 250 // 估算tooltip高度（包括图片和padding）
+const TOOLTIP_WIDTH = 250  // 估算tooltip宽度（包括图片和padding）
+const PADDING = 30         // tooltip的padding和margin
+const VIEWPORT_MARGIN = 10 // 视口边距
+
 const updateTooltipPosition = () => {
     if (!triggerRef.value) return
     
     const rect = triggerRef.value.getBoundingClientRect()
-    const tooltipHeight = 250 // 估算tooltip高度（包括图片和padding）
-    const tooltipWidth = 250 // 估算tooltip宽度（包括图片和padding）
-    const padding = 30 // tooltip的padding和margin
     const spaceAbove = rect.top
     const spaceBelow = window.innerHeight - rect.bottom
     
     // 垂直方向：选择空间更大的一侧
-    const useBelow = spaceAbove < tooltipHeight && spaceBelow > spaceAbove
+    const useBelow = spaceAbove < TOOLTIP_HEIGHT && spaceBelow > spaceAbove
     showBelow.value = useBelow
     
     // 检查垂直空间是否足够
     const availableSpace = useBelow ? spaceBelow : spaceAbove
     
-    if (availableSpace < tooltipHeight) {
+    if (availableSpace < TOOLTIP_HEIGHT) {
         // 空间不足，需要缩放到可用高度的1/2
         needsScaling.value = true
-        scaledHeight.value = Math.floor((availableSpace - padding) / 2)
+        scaledHeight.value = Math.floor((availableSpace - PADDING) / 2)
     } else {
         needsScaling.value = false
         scaledHeight.value = null
@@ -74,11 +77,11 @@ const updateTooltipPosition = () => {
     // 水平方向：确保tooltip不会超出视口
     const viewportWidth = window.innerWidth
     const triggerCenter = rect.left + rect.width / 2
-    const halfTooltipWidth = tooltipWidth / 2
+    const halfTooltipWidth = TOOLTIP_WIDTH / 2
     
     // 检查左右是否会超出视口
-    const overflowLeft = triggerCenter - halfTooltipWidth < 10
-    const overflowRight = triggerCenter + halfTooltipWidth > viewportWidth - 10
+    const overflowLeft = triggerCenter - halfTooltipWidth < VIEWPORT_MARGIN
+    const overflowRight = triggerCenter + halfTooltipWidth > viewportWidth - VIEWPORT_MARGIN
     
     if (overflowLeft) {
         // 靠左边界，从左侧对齐
