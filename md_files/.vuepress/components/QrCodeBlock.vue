@@ -10,7 +10,14 @@
                 {{ text }}
             </a>
             <span v-else>{{ text }}</span>
-            <span class="qrcode-tooltip">
+            <span 
+                class="qrcode-tooltip"
+                :style="{
+                    left: horizontalOffset,
+                    right: horizontalOffset === 'auto' ? '0' : 'auto',
+                    transform: `translateX(${transformX})`
+                }"
+            >
                 <img 
                     :src="withBase(qrcode)" 
                     :alt="`${text} 二维码`" 
@@ -35,21 +42,24 @@ const triggerRef = ref<HTMLElement | null>(null)
 const showBelow = ref(false)
 const needsScaling = ref(false)
 const scaledHeight = ref<number | null>(null)
+const horizontalOffset = ref('50%')
+const transformX = ref('-50%')
 
 const updateTooltipPosition = () => {
     if (!triggerRef.value) return
     
     const rect = triggerRef.value.getBoundingClientRect()
     const tooltipHeight = 250 // 估算tooltip高度（包括图片和padding）
+    const tooltipWidth = 250 // 估算tooltip宽度（包括图片和padding）
     const padding = 30 // tooltip的padding和margin
     const spaceAbove = rect.top
     const spaceBelow = window.innerHeight - rect.bottom
     
-    // 选择空间更大的一侧
+    // 垂直方向：选择空间更大的一侧
     const useBelow = spaceAbove < tooltipHeight && spaceBelow > spaceAbove
     showBelow.value = useBelow
     
-    // 检查选中侧的空间是否足够
+    // 检查垂直空间是否足够
     const availableSpace = useBelow ? spaceBelow : spaceAbove
     
     if (availableSpace < tooltipHeight) {
@@ -59,6 +69,29 @@ const updateTooltipPosition = () => {
     } else {
         needsScaling.value = false
         scaledHeight.value = null
+    }
+    
+    // 水平方向：确保tooltip不会超出视口
+    const viewportWidth = window.innerWidth
+    const triggerCenter = rect.left + rect.width / 2
+    const halfTooltipWidth = tooltipWidth / 2
+    
+    // 检查左右是否会超出视口
+    const overflowLeft = triggerCenter - halfTooltipWidth < 10
+    const overflowRight = triggerCenter + halfTooltipWidth > viewportWidth - 10
+    
+    if (overflowLeft) {
+        // 靠左边界，从左侧对齐
+        horizontalOffset.value = '0'
+        transformX.value = '0'
+    } else if (overflowRight) {
+        // 靠右边界，从右侧对齐
+        horizontalOffset.value = 'auto'
+        transformX.value = '0'
+    } else {
+        // 正常居中
+        horizontalOffset.value = '50%'
+        transformX.value = '-50%'
     }
 }
 </script>
@@ -91,8 +124,6 @@ const updateTooltipPosition = () => {
 .qrcode-tooltip {
     position: absolute;
     bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
     margin-bottom: 10px;
     padding: 8px;
     background: white;
@@ -105,6 +136,8 @@ const updateTooltipPosition = () => {
     pointer-events: none;
     z-index: 1000;
     white-space: nowrap;
+    /* 确保tooltip不会超出视口左右边界 */
+    max-width: calc(100vw - 20px);
 }
 
 /* 当显示在下方时 */
