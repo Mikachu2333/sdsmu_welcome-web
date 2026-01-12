@@ -58,6 +58,10 @@
 部分网址仅在特定开放时段可用，敬请注意
 :::
 
+::: important
+教育部认可的全国大学生学科竞赛A类竞赛目录清单详见[此处](/in_school/tutorial/others.md#教育部认可的全国大学生学科竞赛a类竞赛目录清单)
+:::
+
 ### 大创
 
 1. 国家级大学生创新训练计划平台：[http://gjcxcy.bjtu.edu.cn](http://gjcxcy.bjtu.edu.cn)

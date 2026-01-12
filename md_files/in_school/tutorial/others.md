@@ -538,3 +538,102 @@
 - 8 分及以上：请参考游戏本
 
 详细选购指南可参考[【小白必看】笔记本电脑选购指南](https://mp.weixin.qq.com/s/-n8za4MWqP3sjOOpMhIWbg)
+
+## 教育部认可的全国大学生学科竞赛 A 类竞赛目录清单
+
+::: note
+
+1. 本清单更新于 2026.01.12
+2. 已按月份整理
+3. 未附链接的竞赛以学校下发的报名通知及相关文件的说明为准
+4. 部分赛事的网址可能不在非报名时间段开放，请以相关通知内容为准
+
+:::
+
+| 月份 | 竞赛名称                                                                                                                       | 竞赛分类         | 报名开始 | 报名结束  |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------- | -------- | --------- |
+| 1    | [“挑战杯”全国大学生课外学术科技作品竞赛](https://www.tiaozhanbei.net/)                                                         | 综合类           | 1        | 6         |
+| 1    | [“挑战杯”中国大学生创业计划竞赛](https://www.tiaozhanbei.net/)                                                                 | 综合类           | 1        | 6         |
+| 1    | [中国大学生医学技术技能大赛](https://medu.bjmu.edu.cn/cms/show.action?code=jumpsitetemplate&siteid=100001)                     | 医学类           | 1        | 1         |
+| 1    | [全国大学生结构设计竞赛](http://www.structurecontest.com/)                                                                     | 其他工学类       | 1        | 3         |
+| 1    | [全国大学生广告艺术大赛](https://www.sun-ada.net/)                                                                             | 艺术类           | 1        | 6         |
+| 1    | [全国大学生智能汽车竞赛](https://www.eepw.com.cn/event/action/freescale_car2012/)                                              | 电子信息类       | 1        | 6         |
+| 1    | [全国大学生集成电路创新创业大赛](http://univ.ciciec.com/)                                                                      | 电子信息类       | 1        | 3         |
+| 1    | [全国周培源大学生力学竞赛](http://zpy.cstam.org.cn)                                                                            | 理学类           | 1        | 3         |
+| 1    | [全国大学生物理实验竞赛](https://wlsycx.moocollege.com/)                                                                       | 理学类           | 1        | 5         |
+| 1    | [“学创杯”全国大学生创业综合模拟大赛](http://www.bster.cn/cyds/index)                                                           | 经管类           | 1        | 3         |
+| 1    | [“21 世纪杯”全国英语演讲比赛](https://contest.i21st.cn/)                                                                       | 语言类           | 1        | 4         |
+| 1    | [全国大学生基础医学创新研究暨实验设计论坛（大赛）](http://www.jcyxds.com/)                                                     | 医学类（研究型） | 1        | 4         |
+| 1    | [世界技能大赛中国选拔赛](http://worldskillschina.mohrss.gov.cn/)                                                               | 职业技能类       | 1        | 8         |
+| 2    | [中国大学生机械工程创新创意大赛](http://www.gczbds.org)                                                                        | 其他工学类       | 2        | 4         |
+| 2    | [睿抗机器人开发者大赛（RAICOM）](https://www.robocom.com.cn/)                                                                  | 机器人类         | 2        | 12        |
+| 2    | [全国大学生统计建模大赛](http://tjjmds.ai-learning.net/)                                                                       | 理学类           | 2        | 5         |
+| 3    | [全国大学生电子设计竞赛](http://www.nuedcchina.com/)                                                                           | 电子信息类       | 3        | 4         |
+| 3    | [全国大学生机械创新设计大赛](https://11umic.hust.edu.cn/index.htm)                                                             | 其他工学类       | 3        | 5         |
+| 3    | [全国大学生物流设计大赛](http://www.clpp.org.cn/)                                                                              | 经管类           | 3        | 4         |
+| 3    | [全国大学生化工设计竞赛](http://iche.zju.edu.cn/)                                                                              | 其他工学类       | 3        | 3         |
+| 3    | [全国三维数字化创新设计大赛](https://3dds.3ddl.net/)                                                                           | 电子信息类       | 3        | 6         |
+| 3    | [“西门子杯”中国智能制造挑战赛](http://www.siemenscup-cimc.org.cn/)                                                             | 电子信息类       | 3        | 5         |
+| 3    | [中国机器人大赛暨 RoboCup 机器人世界杯中国赛](https://rcccaa.drct-caa.org.cn/)                                                 | 机器人类         | 3        | 4         |
+| 3    | [全国大学生嵌入式芯片与系统设计竞赛](http://www.socchina.net)                                                                  | 电子信息类       | 3        | 4         |
+| 3    | [中国高校智能机器人创意大赛](https://www.robotcontest.cn/)                                                                     | 机器人类         | 3        | 6         |
+| 3    | [中国机器人及人工智能大赛](https://developer.apollo.auto/devcenter/gameOperations_cn.html?target=3)                            | 机器人类         | 3        | 3         |
+| 3    | [“外教社杯”全国高校学生跨文化能力大赛](https://ict.sflep.com/index.php?m=content&c=index&a=lists&catid=15)                     | 语言类           | 3        | 4         |
+| 3    | [全国大学生测绘学科创新创业智能大赛](https://smt.whu.edu.cn/index.htm)                                                         | 其他工学类       | 3        | 5         |
+| 3    | [全国企业竞争模拟大赛](https://bisai.ibizsim.cn/cms/qimoquanguosai.html)                                                       | 经管类           | 3        | 3         |
+| 4    | [ACM-ICPC 国际大学生程序设计竞赛](https://icpc.global/)                                                                        | 计算机类         | 4        | 5         |
+| 4    | [“外研社・国才杯”“理解当代中国”全国大学生外语能力大赛](https://ucc.fltrp.com/)                                                 | 语言类           | 4        | 10        |
+| 4    | [两岸新锐设计竞赛・华灿奖](http://www.huacanjiang.com/home/homepage)                                                           | 艺术类           | 4        | 4         |
+| 4    | [全国大学生先进成图技术与产品信息建模创新大赛](http://www.chengtudasai.com/)                                                   | 其他工学类       | 4        | 4         |
+| 4    | [中国大学生计算机设计大赛](https://jsjds.blcu.edu.cn/)                                                                         | 计算机类         | 4        | 5         |
+| 4    | [全国大学生地质技能竞赛](https://yuanxi.cugb.edu.cn/competition/)                                                              | 理学类           | 4        | 5         |
+| 4    | [全国大学生光电设计竞赛](http://gd.p.moocollege.com/)                                                                          | 其他工学类       | 4        | 8         |
+| 4    | [全国大学生信息安全竞赛](http://www.ciscn.cn/)                                                                                 | 电子信息类       | 4        | 6         |
+| 4    | [“中国软件杯”大学生软件设计大赛](https://www.cnsoftbei.com/)                                                                   | 计算机类         | 4        | 7         |
+| 4    | [全国大学生节能减排社会实践与科技竞赛](http://www.jienengjianpai.org/)                                                         | 其他工学类       | 4        | 4         |
+| 4    | [iCAN 大学生创新创业大赛](http://g-ican.com/home/index)                                                                        | 综合类           | 4        | 7         |
+| 4    | [中华经典诵写讲大赛](https://jdsxj.eduyun.cn/)                                                                                 | 语言类           | 4        | 7         |
+| 4    | [百度之星・程序设计大赛](https://star.baidu.com/#/)                                                                            | 计算机类         | 4        | 6         |
+| 4    | [全国大学生水利创新设计大赛](https://sljzw.hhu.edu.cn/fenhui/2023/0411/c12009a259306/page.htm)                                 | 其他工学类       | 4        | 5         |
+| 4    | [全国大学生化工实验大赛](http://www.cteic.com/higherEducation-199.html?www.kulayu.com)                                         | 其他工学类       | 4        | 6         |
+| 4    | [全国大学生化学实验创新设计大赛](https://cid.nju.edu.cn/)                                                                      | 理学类           | 4        | 4         |
+| 4    | [全国大学生计算机系统能力大赛](https://os.educg.net/#/)                                                                        | 计算机类         | 4        | 6         |
+| 4    | [全国大学生物联网设计竞赛](https://developer.huaweicloud.com/college/wulianwang.html)                                          | 其他工学类       | 4        | 6         |
+| 4    | [全国大学生信息安全与对抗技术竞赛](https://www.isclab.org.cn/)                                                                 | 电子信息类       | 4        | 5         |
+| 5    | [中国国际大学生创新大赛](https://cy.ncss.cn/)                                                                                  | 综合类           | 5        | 8         |
+| 5    | [全国大学生数学建模竞赛](https://www.mcm.edu.cn/)                                                                              | 理学类           | 5        | 9         |
+| 5    | [中美青年创客大赛](https://chinaus-maker.cscse.edu.cn/)                                                                        | 综合类           | 5        | 6         |
+| 5    | 全国高等院校数智化企业经营沙盘大赛                                                                                             | 经管类           | 5        | 9         |
+| 5    | [全国数字建筑创新应用大赛](http://bisai.ccen.com.cn)                                                                           | 其他工学类       | 5        | 8         |
+| 5    | [全球校园人工智能算法精英大赛](https://developer.huawei.com/consumer/cn/activity/digixActivity/digixdetail/101655281685926449) | 计算机类         | 5        | 10        |
+| 5    | [“一带一路”暨金砖国家技能发展与技术创新大赛](http://inwsa.org/#/index)                                                         | 职业技能类       | 5        | 12        |
+| 5    | [蓝桥杯全国职业院校程序设计大赛](https://dasai.lanqiao.cn/)                                                                    | 职业技能类       | 5        | 6         |
+| 6    | [中国高校计算机大赛](http://www.c4best.cn/)                                                                                    | 计算机类         | 6        | 7         |
+| 6    | [全国大学生工业设计大赛](https://www.cuidc.net/#/)                                                                             | 艺术类           | 6        | 7         |
+| 6    | [全国本科院校税收风险管控案例大赛](https://ssfkds.moocollege.com/home/homepage)                                                | 经管类           | 6        | 10        |
+| 6    | [世界技能大赛](https://worldskills.org/)                                                                                       | 职业技能类       | 6        | 9         |
+| 7    | [全国大学生生命科学竞赛（CULSC）](https://www.culsc.cn/#/)                                                                     | 理学类           | 7        | 次年 1 月 |
+| 7    | [国际大学生智能农业装备创新大赛](https://uiaec.ujs.edu.cn)                                                                     | 农学类           | 7        | 10        |
+| 8    | [全国大学生数字媒体科技作品及创意大赛](http://cmit.cn/)                                                                        | 艺术类           | 8        | 10        |
+| 9    | [全国大学生电子商务“创新、创意及创业”挑战赛](https://www.3chuang.net/)                                                         | 经管类           | 9        | 12        |
+| 9    | [中国大学生工程实践与创新能力大赛](http://www.gcxl.edu.cn/new/index.html)                                                      | 其他工学类       | 9        | -         |
+| 9    | [全国大学生市场调查与分析大赛](http://www.china-cssc.org/list-58-1.html)                                                       | 经管类           | 9        | 10        |
+| 9    | [华为 ICT 大赛](https://e.huawei.com/cn/talent/ict-academy/#/ict-contest)                                                      | 电子信息类       | 9        | 11        |
+| 9    | [全国高校 BIM 毕业设计创新大赛](https://gxbsxs.glodonedu.com/home)                                                             | 其他工学类       | 9        | 11        |
+| 9    | [全国高校商业精英挑战赛](https://ssyth.cubec.org.cn/)                                                                          | 经管类           | 9        | 次年 3 月 |
+| 9    | [“科云杯”全国大学生财会职业能力大赛](http://match.xmkeyun.com.cn/)                                                             | 经管类           | 9        | 10        |
+| 9    | [全国职业院校技能大赛](http://www.chinaskills-jsw.org/index.html)                                                              | 职业技能类       | 9        | 10        |
+| 10   | 全国大学生创新创业训练计划年度展示                                                                                             | 综合类           | 10       | 10        |
+| 10   | [全国大学生机器人大赛](https://www.cnrobocon.net/)                                                                             | 机器人类         | 10       | 次年 3 月 |
+| 10   | [米兰设计周・中国高校设计学科师生优秀作品](https://www.milan-aap.org.cn/index.html#/)展                                        | 艺术类           | 10       | 次年 3 月 |
+| 10   | [中国好创意暨全国数字艺术设计大赛](https://www.cdec.org.cn/)                                                                   | 艺术类           | 10       | 次年 6 月 |
+| 10   | [全国大学生能源经济学术创意大赛](https://energy.qibebt.ac.cn/eneco/contribution/index.html)                                    | 综合类           | 10       | 11        |
+| 11   | [“工行杯”全国大学生金融科技创新大赛](http://www.gonghangbei.com)                                                               | 经管类           | 11       | 次年 1 月 |
+| 11   | [全国大学生机器人大赛-RoboTac](https://www.robotac.cn)                                                                         | 职业技能类       | 11       | 12        |
+| 12   | [中国大学生服务外包创新创业大赛](https://www.fwwb.org.cn/)                                                                     | 电子信息类       | 12       | 次年 3 月 |
+| 12   | [蓝桥杯全国软件和信息技术专业人才大赛](https://dasai.lanqiao.cn/)                                                              | 计算机类         | 12       | 次年 1 月 |
+| 12   | [全国大学生金相技能大赛](https://www.jxds.tech/)                                                                               | 其他工学类       | 12       | 次年 4 月 |
+| 12   | 全国大学生企业模拟经营大赛                                                                                                     | 其他工学类       | 12       | 次年 4 月 |
+| 12   | [未来设计师・全国高校数字艺术设计大赛](https://www.ncda.org.cn/)                                                               | 艺术类           | 12       | 次年 6 月 |
+| 12   | [“大唐杯”全国大学生新一代信息通信技术大赛](https://dtcup.dtxiaotangren.com)                                                    | 电子信息类       | 12       | 次年 2 月 |
+| 12   | [全国大学生花园设计建造竞赛](http://www.lalavision.com/hysjjzjs)                                                               | 农学类           | 12       | 12        |
