@@ -43,7 +43,7 @@ The code of this project is licensed under the MIT License, and the content is l
 5. 文字标红参考 [`study.md`](/md_files/in_school/life/study.md#杂项)
 6. 手动书签跳转参考 [`life.md` 的脚注 1](/md_files/in_school/tutorial/life.md#新生信息查询线上报到) 与 [`school_readiness.md` 的脚注 8](/md_files/before_school/school_readiness.md#宿舍用品)
 7. 行内图片链接请参考 [`life.md` 链接的浮烟山校区部分](md_files/in_school/tutorial/life.md#浴室预约与使用)
-8. 行内二维码参考 [`common_public_accounts.md`](/md_files/in_school/tutorial/common_public_accounts.md)，行间二维码参考 [](/md_files/doc_related/thank_lists.md#宣传发布)
+8. 行内二维码参考 [`common_public_accounts.md`](/md_files/in_school/tutorial/common_public_accounts.md)，行间二维码参考 [thank_lists.md](/md_files/doc_related/thank_lists.md#宣传发布)
 
 ### 写作风格说明
 
@@ -75,4 +75,23 @@ npm run docs:build
 ./deploy.ps1
 ```
 
-移动目录后需要先移除之前的缓存，再 `npm install`，最后运行 `deploy.ps1` 脚本，否则会报错
+**注意**：移动目录后需要先移除之前的缓存，再 `npm install`，最后运行 `deploy.ps1` 脚本，否则会报错
+
+### 项目结构
+
+```tree
+sdsmu_welcome-web/
+├── md_files/                  # Markdown 源文件
+│   ├── .vuepress/            # VuePress 配置
+│   │   ├── components/       # 自定义 Vue 组件
+│   │   ├── public/           # 静态资源
+│   │   ├── config.ts         # 主配置文件
+│   │   ├── client.ts         # 客户端配置
+│   │   └── style.css         # 全局样式
+│   ├── before_school/        # 入学前内容
+│   ├── in_school/            # 在校期间内容
+│   ├── doc_related/          # 文档相关
+│   └── CHANGELOG.md          # 更新日志
+├── package.json              # 项目依赖配置
+└── README.md                 # 本文件
+```

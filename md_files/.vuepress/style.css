@@ -223,3 +223,9 @@ main.vp-page > [vp-content] ol ol ol ol > li::before {
 .footnotes {
   margin-top: 4rem;
 }
+
+/* 全局正文链接点击后变色（排除标题锚点） */
+.theme-default-content a:not(.header-anchor):visited,
+main.vp-page > [vp-content] a:not(.header-anchor):visited {
+  color: #003399;
+}
