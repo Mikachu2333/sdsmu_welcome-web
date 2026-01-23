@@ -52,18 +52,18 @@ try {
         Exec { git commit -m "deploy: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" } "Git commit failed"
 
         # 4. Force push to remote gh-pages branch
-        $repoUrl = "https://github.com/Mikachu2333/sdsmu_welcome-web.git"
+        $repoUrl = "https://github.com/Mikachu2333/sdsmu_welcome-web"
         Write-Host "Pushing to gh-pages branch of $repoUrl..." -ForegroundColor Cyan
 
         # Push local master branch to remote gh-pages branch
-        Exec { git push -f $repoUrl master:gh-pages } "Git push failed"
+        Exec { git push -f $repoUrl master:gh-pages } "Git push Mikachu2333 failed"
 
         # PUSH to lmx's repo
         $repoUrl = "https://github.com/lmx050218/sdsmu_welcome-web"
         Write-Host "Pushing to gh-pages branch of $repoUrl..." -ForegroundColor Cyan
 
         # Push local master branch to remote gh-pages branch
-        Exec { git push -f $repoUrl master:NEW } "Git push failed"
+        Exec { git push -f $repoUrl master:NEW } "Git push lmx050218 failed"
 
         Write-Host "Deployment complete successfully!" -ForegroundColor Green
     }
