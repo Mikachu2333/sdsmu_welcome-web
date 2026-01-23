@@ -58,6 +58,13 @@ try {
         # Push local master branch to remote gh-pages branch
         Exec { git push -f $repoUrl master:gh-pages } "Git push failed"
 
+        # PUSH to lmx's repo
+        $repoUrl = "https://github.com/lmx050218/sdsmu_welcome-web"
+        Write-Host "Pushing to gh-pages branch of $repoUrl..." -ForegroundColor Cyan
+
+        # Push local master branch to remote gh-pages branch
+        Exec { git push -f $repoUrl master:NEW } "Git push failed"
+
         Write-Host "Deployment complete successfully!" -ForegroundColor Green
     }
     finally {
