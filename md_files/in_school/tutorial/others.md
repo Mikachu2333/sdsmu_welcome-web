@@ -12,7 +12,7 @@
 1. 用途：校级格式是用于校内各类**正式文稿**（如活动通知、综测条例、学生会文件等）的标准
 2. 公文字体下载
    - 原始链接（若无法下载请尝试下面的下载方式）：<FileDownload name="公文字体包.zip" href="/resources/sundry/公文字体包.zip" />
-   - lxm 的网盘：[https://pan.dexbug.com/s/BXh9](https://pan.dexbug.com/s/BXh9)（密码：ya1a6l）
+   - dexbug 的网盘：[https://pan.dexbug.com/s/BXh9](https://pan.dexbug.com/s/BXh9)（密码：ya1a6l）
    - 蓝奏云：[https://jiulanyanhua.lanzoum.com/iFRdY3gu9yud](https://jiulanyanhua.lanzoum.com/iFRdY3gu9yud)
    - 百度网盘：[https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4](https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4)
 3. 具体要求：
