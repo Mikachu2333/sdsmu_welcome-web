@@ -26,14 +26,6 @@ const props = defineProps({
 })
 
 const handleDownload = () => {
-    const hostname = window.location.hostname
-    // 判断是否为“公文字体包.zip”
-    if (hostname.includes("sdsmu.com") && props.name === "公文字体包.zip") {
-        // 跳转到 api.sdsmu.com 的专用链接
-        window.open("https://download.sdsmu.com/%E5%85%AC%E6%96%87%E5%AD%97%E4%BD%93%E5%8C%85.zip", "_blank")
-        return
-    }
-    // 其它情况
     const link = document.createElement("a")
     link.href = withBase(props.href)
     link.download = props.downloadName || props.name
