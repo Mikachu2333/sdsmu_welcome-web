@@ -46,3 +46,4 @@ md_files/.vuepress/dist
 
 *.7z
 *.diff
+.deepseek/
