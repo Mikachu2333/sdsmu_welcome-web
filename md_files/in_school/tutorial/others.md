@@ -14,12 +14,7 @@ title: 不便分类的教程
 ## 学生会校级格式
 
 1. 用途：校级格式是用于校内各类**正式文稿**（如活动通知、综测条例、学生会文件等）的标准
-2. 公文字体下载
-   - 原始链接（若无法下载请尝试下面的下载方式）：<FileDownload name="公文字体包.zip" href="/resources/sundry/公文字体包.zip"></FileDownload>
-   - dexbug 的网盘：[https://pan.dexbug.com/s/BXh9](https://pan.dexbug.com/s/BXh9)（密码：ya1a6l）
-   - 蓝奏云：[https://jiulanyanhua.lanzoum.com/iFRdY3gu9yud](https://jiulanyanhua.lanzoum.com/iFRdY3gu9yud)
-   - 百度网盘：[https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4](https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4)
-3. 具体要求：
+2. 具体要求：
 
    1. 纸张大小：A4 纸
    2. 装订：页面左侧上下各 $\frac{1}{4}$ 处，距左边界 0.3 ～ 0.5㎝ 处，钉与纸张左边界平行
@@ -40,6 +35,26 @@ title: 不便分类的教程
    14. 正文与落款之间空 2 行
    15. 落款机构（个人姓名）格式：仿宋-GB2312，三号，右对齐
    16. 落款时间格式：仿宋-GB2312，三号，右对齐，时间格式范例：2024 年 02 月 10 日
+3. 字体下载
+   ::: important 免责声明
+   1. 本网站（组织）对所列的字体不拥有版权，字体版权归原作者所有。
+   2. 若您要将该字体用于商业目的，请联系作者获得授权，本网站（组织）对您使用该字体带来的一切后果不承担任何责任。
+   3. 此处所列之字体及其所有相关信息均来自各地政府官网及各高校官网下载，仅用作汇总与参考，用户在使用时不应将其用于商业用途或其它未经授权的用途，本网站（组织）对信息的准确性不提供任何担保，亦不承担任何责任。
+    <!-- 添加注释以截断自动增加的列表序号 -->
+   :::
+
+   1. 公文字体下载
+      以下压缩包中含有“仿宋_GB2312”、“楷体_GB2312”、“方正小标宋简体”、“方正黑体”、“方正仿宋_GBK”、“方正小标宋GBK”这5种常用公文字体。（此处的“仿宋_GB2312”由方正公司提供，英文部分为 Times New Roman）
+      `SHA-256=16E02946A2C4D88FC9F1BEF063FC6F23D215F0BF6E0D881476D67444AAF68828`
+      - 原始链接（若无法下载请尝试下面的下载方式）：<FileDownload name="公文字体包.zip" href="/resources/sundry/公文字体包.zip"></FileDownload>
+      - 蓝奏云：[https://fpddu6r3pkmc.lanzoum.com/b0j1e9pla 密码:4v5d](https://fpddu6r3pkmc.lanzoum.com/b0j1e9pla)
+      - 百度网盘：[https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4](https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4)
+   2. 其它常用办公字体下载
+      以下压缩包中含有“仿宋”、“楷体”、“隶书”、“幼圆”、“方正大标宋简体”、“方正大黑简体”、“方正楷体_GBK”、“方正楷体简体”、“华文中宋”、“仿宋_GB2312”字体。（此处的“仿宋_GB2312”英文部分为普通字体，由高校提供）
+      `SHA-256=637407AE5972BDBB7ADEEA1C78F6E541E996A70485D478F0C08A0B99BBA91578`
+      为网站加载速度与部署考虑，本字体包不在本网站上放出，请使用以下方式下载
+      - 蓝奏云：[https://fpddu6r3pkmc.lanzoum.com/b0j1e9pla 密码:4v5d](https://fpddu6r3pkmc.lanzoum.com/b0j1e9pla)
+      - 百度网盘：[https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4](https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4)
 
 ## 公交信息与乘车指南
 
