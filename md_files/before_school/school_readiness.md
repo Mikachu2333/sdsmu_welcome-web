@@ -1,8 +1,19 @@
 ---
 title: 入学准备
+tag:
+   - 四级
+   - 六级
+   - 4级
+   - 6级
+   - 四六级
+   - CET
 ---
 
-## <span style="border-bottom:3px double red;color:red">必要证件及物品</span>
+## 必要证件及物品
+
+::: important
+重点章节
+:::
 
 1. <span style="border-bottom:3px double red;">**高考准考证、录取通知书[^1]**</span>（必须带！！！）
    [^1]: 录取通知书共两份，一份自行留存收藏，一份上交

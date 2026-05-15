@@ -2,7 +2,11 @@
 title: 报到
 ---
 
-## <span style="border-bottom:3px double red;">地址与快递</span>
+## 地址与快递
+
+::: important
+重要内容
+:::
 
 ### 浮烟山校区
 

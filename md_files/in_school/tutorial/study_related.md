@@ -30,8 +30,8 @@ title: 学习类教程
 
 1. 打开“山东第二医科大学”app→ 点击底部菜单“应用”
 2. 点击“业务申请”→“学生邮箱申请流程”→“我要办理”
-3. 按照要求填写所有信息并仔细阅读说明 → 提交信息，等待通过
-4. 提交后的下个月 1 号自动注册，进入下一小节的首次登录教程
+3. 按照要求填写所有信息并仔细阅读说明 → 提交信息（向所有审批者发送），等待通过
+4. 提交后的**下个月1号**自动注册，进入下一小节的首次登录教程
 
 ::: warning
 以下操作**必须使用电脑端浏览器进行**
@@ -39,14 +39,14 @@ title: 学习类教程
 
 ### 首次登录激活
 
-1. 在提交信息后的下个月第一天后（推荐 2 ～ 9 号）方可进行此小节步骤，账号创建 10 天后逾期未登录视为放弃账号申请
-2. → 打开[https://edu.icoremail.net](https://edu.icoremail.net) → 点击“忘记密码”
+1. 在提交信息后的**下个月第一天后**（推荐 2～9 号）方可进行此小节步骤，账号创建 10 天后**逾期未登录视为放弃账号申请**
+2. → 打开 [https://edu.icoremail.net](https://edu.icoremail.net) → 点击“忘记密码”
 3. → 选择“山东第二医科大学”→ 按照步骤重置密码（相当于首次设置密码）
-   ::: tip 密码强度
-   建议 14 ～ 16 位，含大小写、数字、特殊字符如下划线等
+   ::: important 密码强度
+   应为 14 ～ 16 位，含大小写、数字、特殊字符（如下划线等）
    :::
 
-4. → 再次打开[https://edu.icoremail.net](https://edu.icoremail.net)（或[https://mail.stu.sdsmu.edu.cn](https://mail.stu.sdsmu.edu.cn)），并登录
+4. → 再次打开 [https://edu.icoremail.net](https://edu.icoremail.net)（或 [https://mail.stu.sdsmu.edu.cn](https://mail.stu.sdsmu.edu.cn) ），并登录
 
 ### 设置
 
@@ -178,7 +178,11 @@ title: 学习类教程
 4. 禁止在图书馆内谈恋爱、亲嘴
 5. 禁止在图书馆占座，馆内**每天清书**
 
-## <span style="border-bottom:3px double red;">教务系统</span>
+## 教务系统
+
+::: important
+重要章节
+:::
 
 ::: warning
 仅限校内访问，如需在外使用教务系统，参见[CAS 系统](/in_school/tutorial/study_related.md#cas-资源访问控制系统校内-vpn)条目
@@ -187,7 +191,11 @@ title: 学习类教程
 1. 官网：[https://jwgl.sdsmu.edu.cn$^㊕$](https://jwgl.sdsmu.edu.cn)
 2. 用途：**选课，缓考申请，成绩查询**，查看（导出）课程表，空闲教室查询
 
-## <span style="color:red">CAS 资源访问控制系统（校内 VPN）</span>
+## CAS 资源访问控制系统（校内 VPN）
+
+::: important
+重要章节
+:::
 
 ::: tip
 
@@ -208,7 +216,11 @@ title: 学习类教程
       请注意，在校外时点击“教务系统”无法登录，只有“非单点”能校外登录！
       :::
 
-## <span style="color:red">CARSI 系统</span>
+## CARSI 系统
+
+::: important
+重要章节
+:::
 
 1. 官网：[https://ds.carsi.edu.cn](https://ds.carsi.edu.cn)
 2. 说明：（与 CAS 认证系统作用不同）用于快速访问学校订阅的各类数据库、查询文献等，如百度文库、知网、万方、维普等
