@@ -26,9 +26,8 @@ const loadJiebaWithCustomDict = () => {
     return new Jieba();
   }
 
-  // withDict需要Buffer格式，每行一个词
+  // loadDict 需要 Buffer 格式，每行一个词
   const dictBuffer = Buffer.from(words.join("\n"), "utf-8");
-  // 使用默认词典并加载自定义词典
   const jieba = new Jieba();
   jieba.loadDict(dictBuffer);
   return jieba;
