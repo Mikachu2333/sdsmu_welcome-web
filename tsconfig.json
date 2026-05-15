@@ -13,8 +13,8 @@
   },
   "include": [
     "env.d.ts",
-    ".vitepress/**/*.ts",
-    ".vitepress/**/*.vue",
-    ".vitepress/**/*.mts"
+    ".vuepress/**/*.ts",
+    ".vuepress/**/*.vue",
+    ".vuepress/**/*.mts"
   ]
 }
