@@ -92,36 +92,96 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 - 双击 `WORKPLACE.code-workspace` 以打开 VSCode 工作区
 - 开始编辑
 - 本地运行
-  1. 打开“终端”，首次运行需先输入 `npm init;npm install;npm audit fix --force` 安装依赖（移动目录后需要先移除之前 `.vuepress/.cache` 文件夹，再在项目根目录下 `npm install`，否则会报错）
-  2. 本地预览修改后的文件 `npm run docs:serve`
-  3. 本地构建 `npm run docs:build`
+  1. 打开终端，首次运行输入 `npm install` 安装依赖（移动目录后需先移除 `md_files/.vuepress/.cache` 文件夹，再执行 `npm install`，否则会报错）
+  2. 本地预览：`npm run docs:dev`
+  3. 本地构建：`npm run docs:build`
 - 上传修改后的文件到 GitHub 仓库
    1. 上传前先运行 `git pull` 同步远程仓库的修改
-   2. 再通过 lazygit 或左侧边栏提交修改 或 `git add *;git commit -am "提交文件的概括信息"`
-   3. 通过 lazygit 或左侧边栏或 `git push` 上传修改
-- 上传构建好的文件到新服务器（请寻求老师的帮助，这一步可能不方便完成）
+   2. 通过 lazygit 或 VSCode 侧栏提交修改，或 `git add . && git commit -m "提交说明"`
+   3. 通过 lazygit 或 `git push` 推送修改
+- 部署构建产物到服务器
    1. 运行 `npm run docs:build` 构建文件
-   2. 上传 `/md_files/.vuepress/dist` 文件夹中的**所有内容**到服务器的对应目录，指明主页为 `index.html`
+   2. 将 `md_files/.vuepress/dist` 目录中的**所有内容**上传到服务器对应目录，主页指向 `index.html`
 
-**注意**：移动目录后需要先移除之前的缓存，再 `npm install`，否则会报错
+**注意**：移动项目目录后需先删除 `md_files/.vuepress/.cache`，再执行 `npm install`，否则会报错
 
 ### 项目结构
 
-```tree
-sdsmu_welcome-web/
-├── md_files/                  # Markdown 源文件
-│   ├── .vuepress/             # VuePress 配置
-│   │   ├── components/       # 自定义 Vue 组件
-│   │   ├── public/           # 静态资源
-│   │   ├── config.ts         # 主配置文件
-│   │   ├── client.ts         # 客户端配置
-│   │   └── style.css         # 全局样式
-│   ├── before_school/        # 入学前内容
-│   ├── in_school/            # 在校期间内容
-│   ├── doc_related/          # 文档相关
-│   └── CHANGELOG.md          # 更新日志
-├── package.json               # 项目依赖配置
-└── README.md                  # 本文件
+`tree -I node_modules -o 1.txt ./`
+
+```text
+./
+├── CLAUDE.md                        # Claude Code 项目说明
+├── CODE_OF_CONDUCT.md               # 贡献者行为准则
+├── LICENSE-CC                       # CC BY-SA 4.0（内容许可）
+├── LICENSE-MIT                      # MIT（代码许可）
+├── README.md                        # 项目说明（本文件）
+├── WORKPLACE.code-workspace         # VS Code 工作区文件
+├── deploy.ps1                       # 手动部署脚本（推送 dist 到 gh-pages）
+├── env.d.ts                         # Vue SFC 类型声明
+├── favicon.afdesign                 # 网站图标源文件
+├── netlify.toml                     # Netlify 部署配置
+├── package.json                     # 项目依赖与脚本
+├── package-lock.json                # 依赖版本锁定
+├── tsconfig.json                    # TypeScript 配置
+│
+├── md_files/                        # VuePress 源文件根目录
+│   ├── index.md                     # 首页（home 布局）
+│   ├── CHANGELOG.md                 # 更新日志（Web 版）
+│   ├── CHANGELOG_old.md             # 更新日志（旧 LaTeX 版）
+│   ├── LICENSE                      # 内容许可（CC BY-SA 4.0）
+│   │
+│   ├── .vuepress/                   # VuePress 配置与组件
+│   │   ├── config.ts                # 主配置：主题、插件、侧边栏
+│   │   ├── client.ts                # 客户端入口：注册全局组件、加载样式
+│   │   ├── style.css                # 全局样式（暗色模式、CJK 排版、响应式）
+│   │   ├── custom-dict.txt          # jieba 分词自定义词典（278 条目）
+│   │   ├── components/              # 自定义 Vue 3 组件
+│   │   │   ├── FigureImage.vue      #   全宽图片（带标题与下载）
+│   │   │   ├── InlineImage.vue      #   行内小图标
+│   │   │   ├── FileDownload.vue     #   文件下载按钮
+│   │   │   ├── Donate.vue           #   打赏二维码
+│   │   │   ├── QrCodeLink.vue       #   行内文字 + 二维码浮窗
+│   │   │   ├── QrCodeBlock.vue      #   块级文字 + 二维码浮窗
+│   │   │   └── MinxingFloorSearch.vue # 敏行楼 SVG 楼层图搜索
+│   │   └── public/                  # 静态资源（部署到站点根路径 /）
+│   │       ├── favicon.svg          #   网站图标
+│   │       ├── _redirects           #   Netlify 重定向规则
+│   │       ├── fonts/               #   字体文件（Noto Sans SC、Cascadia Code）
+│   │       └── resources/           #   图片、地图、二维码等资源
+│   │
+│   ├── before_school/               # 新生入学（6 篇）
+│   │   ├── school_readiness.md      #   入学准备
+│   │   ├── school_register.md       #   报到流程
+│   │   ├── goto_school.md           #   交通指引
+│   │   ├── military_training.md     #   军训概况
+│   │   ├── cost.md                  #   费用与银行卡
+│   │   └── common_questions.md      #   常见问题
+│   │
+│   ├── doc_related/                 # 文档相关（5 篇）
+│   │   ├── thank_lists.md           #   致谢
+│   │   ├── copyright_statements.md  #   版权声明
+│   │   ├── document_introduction.md #   指南简介
+│   │   ├── calender.md              #   校历
+│   │   └── epilogue.md              #   后记
+│   │
+│   └── in_school/                   # 在校期间内容（26 篇）
+│       ├── campus_fuyanshan/        #   浮烟山校区
+│       │   ├── summary_fuyanshan.md #     校区概况
+│       │   ├── maps/                #     地图（4 篇）
+│       │   ├── dormitory_fuyanshan.md #   宿舍
+│       │   └── school_life_fuyanshan.md # 校园生活
+│       ├── campus_yuhe/             #   虞河校区
+│       │   ├── summary_yuhe.md      #     校区概况
+│       │   ├── maps/                #     地图（3 篇）
+│       │   ├── dormitory_yuhe.md    #     宿舍
+│       │   └── school_life_yuhe.md  #     校园生活
+│       ├── life/                    #   校园安全与学习
+│       ├── further/                 #   就业与兼职
+│       ├── summary/                 #   组织信息汇总
+│       └── tutorial/               #   教程（8 篇）
+│
+└── 12 directories, 55 files
 ```
 
 ## 依赖升级
@@ -130,5 +190,6 @@ sdsmu_welcome-web/
    - `npm install -g npm-check-updates`
 2. 查看可升级的 package
    - `ncu`
-3. 升级 packages（Vue插件生态的需要手动更新 next 版本）
+3. 升级 packages
    - `ncu -u`
+   - 注意：VuePress 生态插件使用 `rc` 版本标签，`ncu -u` 可能不会检出最新版本，需要手动核对
