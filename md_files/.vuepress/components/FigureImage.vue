@@ -6,7 +6,7 @@
         下载
       </a>
     </figcaption>
-    <img :src="withBase(src)" :alt="alt || title" class="figure-img" />
+    <img :src="withBase(src)" :alt="alt || title" class="figure-img" loading="lazy" />
   </figure>
 </template>
 
