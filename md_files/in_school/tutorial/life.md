@@ -11,7 +11,11 @@ title: 生活类教程
 
 :::
 
-## <span style="border-bottom:3px double red;color:red">新生信息查询、线上报到</span>
+## 新生信息查询、线上报到
+
+::: important
+新生必看
+:::
 
 1. 关注“山东第二医科大学学生之家”公众号或登录[智慧学工系统](https://zhxg.sdsmu.edu.cn)
 2. 点击菜单栏“新生报到”并登录系统（注：账号为身份证号，初始密码为 Sddeykdx+身份证号后六位）

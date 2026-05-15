@@ -5,6 +5,7 @@ import { slimsearchPlugin } from "@vuepress/plugin-slimsearch";
 import { markdownExtPlugin } from "@vuepress/plugin-markdown-ext";
 import { markdownStylizePlugin } from "@vuepress/plugin-markdown-stylize";
 import { markdownMathPlugin } from "@vuepress/plugin-markdown-math";
+import { markdownContainerPlugin } from "@vuepress/plugin-markdown-container";
 import { Jieba } from "@node-rs/jieba";
 import fs from "fs";
 import path from "path";
@@ -313,7 +314,7 @@ export default defineUserConfig({
       ],
     }),
     markdownExtPlugin({
-      footnote: true,
+      gfm: true,
     }),
     markdownStylizePlugin({
       mark: true,
