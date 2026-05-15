@@ -1,10 +1,12 @@
 # 山东第二医科大学指南 Web 版
 
-本项目是山东第二医科大学指南的 Web 版本，包含原 [指南本体（LaTex 版）](https://github.com/SDSMU-Companion/sdsmu_welcome_tex)与 [指南切片](https://github.com/SDSMU-Companion/sdsmu_welcome_tex) 的全部内容。
+本项目是山东第二医科大学指南的 Web 版本。
 
-本项目旨在将原有 PDF 版本的指南线上化，让指南在不同设备上轻松浏览。
+本指南现已包含原 [指南（LaTex 版）](https://github.com/SDSMU-Companion/sdsmu_welcome_tex)与 [指南切片](https://github.com/SDSMU-Companion/sdsmu_welcome_tex) 的全部内容。
 
-因**本项目已正式上线**，故**上述项目已全部进入 Archive 状态**，不再维护。
+本项目旨在将 PDF 版本的指南线上化，让指南在不同设备上轻松浏览。
+
+因**本项目已正式上线**，**上述项目已全部进入 Archive 状态**，不再维护。
 
 ---
 
@@ -24,7 +26,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 
 请参考以下链接学习 Markdown 文件的编辑
 
-1. [Markdown 备忘清单](https://wangchujiang.com/reference/docs/markdown.html)
+1. [Markdown 备忘清单](https://jaywcjlove.github.io/reference/docs/markdown.html)
 2. [VuePress 生态系统](https://ecosystem.vuejs.press/zh/)
 3. [HTML 备忘清单](https://reference.learntech.cn/docs/html.html)
 4. [Vue 3 备忘清单](https://reference.learntech.cn/docs/vue.html)
@@ -45,7 +47,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 2. 提示块
 
     ```markdown
-    ::: 以下几项根据情况选择
+    ::: 此处需根据具体情况从以下几项中选择
     文字
     :::
     ```
@@ -56,6 +58,8 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
    - `note` 提示
    - `important` 重要提示，少用
 3. 强调请参考 [`thank_lists.md` 的最后](md_files/doc_related/thank_lists.md)
+
+   <span style="color:red; font-weight:bold; background:yellow">严禁在标题中使用加粗等自定义格式，将导致无法搜索！</span>
 
    1. 加粗代码为 `font-size:2em;`
    2. 字体颜色通用代码为 `color:rgb(0,0,0);`，特殊颜色可以直接写英文
@@ -71,8 +75,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 4. 双下划线请参考 [`dormitory_fuyanshan.md`](/md_files/in_school/campus_fuyanshan/dormitory_fuyanshan.md#住宿注意事项)
 5. 文字标红参考 [`study.md`](/md_files/in_school/life/study.md#杂项)
 6. 手动书签跳转参考 [`life.md` 的脚注 1](/md_files/in_school/tutorial/life.md#新生信息查询线上报到) 与 [`school_readiness.md` 的脚注 8](/md_files/before_school/school_readiness.md#宿舍用品)
-7.
-8. 行内二维码参考 [`common_public_accounts.md`](/md_files/in_school/tutorial/common_public_accounts.md)，行间二维码参考 [thank_lists.md](/md_files/doc_related/thank_lists.md#宣传发布)
+7. 行内二维码参考 [`common_public_accounts.md`](/md_files/in_school/tutorial/common_public_accounts.md)，行间二维码参考 [thank_lists.md](/md_files/doc_related/thank_lists.md#宣传发布)
 
 ### 写作风格说明
 
@@ -89,14 +92,14 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 - 双击 `WORKPLACE.code-workspace` 以打开 VSCode 工作区
 - 开始编辑
 - 本地运行
-  1. 打开“终端”，首次运行需先输入 `npm init;npm install` 安装依赖（移动目录后需要先移除之前 `.vuepress/.cache` 文件夹，再在项目根目录下 `npm install`，否则会报错）
-  2. 本地预览修改后的文件 `npm run docs:dev`
+  1. 打开“终端”，首次运行需先输入 `npm init;npm install;npm audit fix --force` 安装依赖（移动目录后需要先移除之前 `.vuepress/.cache` 文件夹，再在项目根目录下 `npm install`，否则会报错）
+  2. 本地预览修改后的文件 `npm run docs:serve`
   3. 本地构建 `npm run docs:build`
 - 上传修改后的文件到 GitHub 仓库
    1. 上传前先运行 `git pull` 同步远程仓库的修改
    2. 再通过 lazygit 或左侧边栏提交修改 或 `git add *;git commit -am "提交文件的概括信息"`
    3. 通过 lazygit 或左侧边栏或 `git push` 上传修改
-- 上传构建好的文件到新服务器
+- 上传构建好的文件到新服务器（请寻求老师的帮助，这一步可能不方便完成）
    1. 运行 `npm run docs:build` 构建文件
    2. 上传 `/md_files/.vuepress/dist` 文件夹中的**所有内容**到服务器的对应目录，指明主页为 `index.html`
 
@@ -127,7 +130,5 @@ sdsmu_welcome-web/
    - `npm install -g npm-check-updates`
 2. 查看可升级的 package
    - `ncu`
-3. 升级 packages（Vue系统的插件包需要手动更新 alpha 版本）
+3. 升级 packages（Vue插件生态的需要手动更新 next 版本）
    - `ncu -u`
-
-**严禁升级 `"@vuepress/plugin-slimsearch": "2.0.0-rc.121"`**！
