@@ -248,8 +248,18 @@ const buildZoneIndex = (floor) => {
 // 异步加载对应楼层的 SVG 文件并建立索引缓存
 const loadFloorSvg = async (floor) => {
   if (!floorSvgMarkupMap.value[floor]) {
-    const response = await fetch(withBase(floorSvgPathMap[floor]));
-    floorSvgMarkupMap.value[floor] = await response.text();
+    const path = floorSvgPathMap[floor];
+    // 查找是否已经有相同 path 的 SVG 加载过（例如 3F 和 4F 共用同一个文件）
+    const cachedFloor = Object.keys(floorSvgMarkupMap.value).find(
+      (k) => floorSvgPathMap[k] === path && floorSvgMarkupMap.value[k]
+    );
+
+    if (cachedFloor) {
+      floorSvgMarkupMap.value[floor] = floorSvgMarkupMap.value[cachedFloor];
+    } else {
+      const response = await fetch(withBase(path));
+      floorSvgMarkupMap.value[floor] = await response.text();
+    }
   }
 
   await nextTick();

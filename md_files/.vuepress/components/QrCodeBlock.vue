@@ -7,7 +7,7 @@
             </a>
             <span v-else>{{ text }}</span>
             <span class="qrcode-tooltip">
-                <img :src="withBase(qrcode)" :alt="`${text} 二维码`"
+                <img :src="withBase(qrcode)" :alt="`${text} 二维码`" loading="lazy"
                     :style="needsScaling && scaledHeight ? { width: 'auto', height: `${scaledHeight}px`, maxWidth: 'none' } : {}" />
             </span>
         </span>

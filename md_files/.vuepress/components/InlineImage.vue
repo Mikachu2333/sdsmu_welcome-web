@@ -1,5 +1,5 @@
 <template>
-  <img :src="withBase(src)" :alt="alt" class="inline-image" />
+  <img :src="withBase(src)" :alt="alt" class="inline-image" loading="lazy" />
 </template>
 
 <script setup>
