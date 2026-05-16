@@ -16,9 +16,12 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 
 ## Thanks
 
-<a href="https://www.netlify.com">
-  <img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" />
-</a>
+|                                                                                                                                                   |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------: |
+| <a href="https://www.netlify.com"><img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" /></a> |
+|                                                                    **GitHub**                                                                     |
+|                                                            GitHub Copilot & ClaudeCode                                                            |
+|                                          DeepSeek Models & Claude Models& Google Models & OpenAI Models                                           |
 
 ## Markdown 文件简要编辑说明
 
@@ -46,21 +49,21 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 
 2. 提示块
 
-    ```markdown
-    ::: 此处需根据具体情况从以下几项中选择
-    文字
-    :::
-    ```
+   ```markdown
+   ::: 此处需根据具体情况从以下几项中选择
+   文字
+   :::
+   ```
 
    - `tip` 因格式原因不便在正文处给出的注释
    - `warning` 警告
    - `info` 相关信息
    - `note` 提示
    - `important` 重要提示，少用
+
 3. 强调请参考 [`thank_lists.md` 的最后](md_files/doc_related/thank_lists.md)
 
    <span style="color:red; font-weight:bold; background:yellow">严禁在标题中使用加粗等自定义格式，将导致无法搜索！</span>
-
    1. 加粗代码为 `font-size:2em;`
    2. 字体颜色通用代码为 `color:rgb(0,0,0);`，特殊颜色可以直接写英文
    3. 背景色通用代码为 `background:rgb(0,0,0);`，特殊颜色可以直接写英文
@@ -68,9 +71,9 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 
    综合示例如下：
 
-    ```markdown
-    <span style="font-size:2em; color:red; font-weight:bold; background:yellow">需要加粗的文本，效果为大字、红色、背景黄色</span>
-    ```
+   ```markdown
+   <span style="font-size:2em; color:red; font-weight:bold; background:yellow">需要加粗的文本，效果为大字、红色、背景黄色</span>
+   ```
 
 4. 双下划线请参考 [`dormitory_fuyanshan.md`](/md_files/in_school/campus_fuyanshan/dormitory_fuyanshan.md#住宿注意事项)
 5. 文字标红参考 [`study.md`](/md_files/in_school/life/study.md#杂项)
@@ -96,12 +99,12 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
   2. 本地预览：`npm run docs:dev`
   3. 本地构建：`npm run docs:build`
 - 上传修改后的文件到 GitHub 仓库
-   1. 上传前先运行 `git pull` 同步远程仓库的修改
-   2. 通过 lazygit 或 VSCode 侧栏提交修改，或 `git add . && git commit -m "提交说明"`
-   3. 通过 lazygit 或 `git push` 推送修改
+  1. 上传前先运行 `git pull` 同步远程仓库的修改
+  2. 通过 lazygit 或 VSCode 侧栏提交修改，或 `git add . && git commit -m "提交说明"`
+  3. 通过 lazygit 或 `git push` 推送修改
 - 部署构建产物到服务器
-   1. 运行 `npm run docs:build` 构建文件
-   2. 将 `md_files/.vuepress/dist` 目录中的**所有内容**上传到服务器对应目录，主页指向 `index.html`
+  1. 运行 `npm run docs:build` 构建文件
+  2. 将 `md_files/.vuepress/dist` 目录中的**所有内容**上传到服务器对应目录，主页指向 `index.html`
 
 **注意**：移动项目目录后需先删除 `md_files/.vuepress/.cache`，再执行 `npm install`，否则会报错
 
