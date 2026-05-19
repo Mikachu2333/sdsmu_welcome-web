@@ -50,9 +50,7 @@
   font-weight: 400;
   font-display: swap;
   /* 排除 U+2018–U+201D 中文引号，使其回落给 CJK 字体获取全角字形 */
-  unicode-range:
-    U+0000-2017, U+201A-201B, U+201E-206F, U+20AC, U+2122, U+2191, U+2193,
-    U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0021-007E;
 }
 
 @font-face {
