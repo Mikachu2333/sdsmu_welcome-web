@@ -82,13 +82,15 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 
 ### 写作风格说明
 
-1. 除版权声明以外，句子结尾无句号
+1. 除版权声明以外，正文句子结尾无句号
 2. 使用 `→` 作为操作步骤的连接符号
 3. 穿插使用 `raw HTML` 以实现更复杂的排版需求，在可能的情况下尽量优先使用 Markdown 语法，若同时有加粗、标红等 Markdown 和 HTML 语法混杂的情况时，仅使用 HTML 语法
 4. 部分行间脚注、特殊书签通过 `<span id="XXX"></span>` 的实现
 5. 未显著区分 `important`、`warning`与`note`
 6. 表格排版未调整
 7. 大量使用了 AI 协助排版，内容无任何 AI
+8. 禁止使用UTF-8单位符号，例如 `％`、`℃`、`cm`等，否则无法搜索
+9. 写作时禁止在正文中随意加入空格，否则将导致难以搜索
 
 ## 本地构建与运行
 

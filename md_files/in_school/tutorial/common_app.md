@@ -2,24 +2,28 @@
 title: 常用软件
 ---
 
-## 学校 App
+::: important
+**永远不要用手机系统自带的浏览器或微信自带浏览器**打开任何网址，尤其是学校的各种网址，经常会出Bug
+:::
 
-1. [山二医 App](http://ydxy.sdsmu.edu.cn/mobileapi_ydxy/open/goDownload)<span id="sdsmu_app"></span>
-2. 大白 U 帮（浮烟山校区洗澡）
+## 学校App
+
+1. [山二医App](http://ydxy.sdsmu.edu.cn/mobileapi_ydxy/open/goDownload)<span id="sdsmu_app"></span>
+2. 大白U帮（浮烟山校区洗澡）
 3. 人卫（考试）
 4. 知到（网课、考试）
 5. 钉钉（下发通知、请假等申请表在此填写）
 6. 腾讯会议（开班会）
-7. fif 口语（大一英语口语作业）
+7. fif口语（大一英语口语作业）
 8. 大英思博英语（大一英语阅读作业）
 9. 批改网（大一英语作文作业）
 
-## 推荐的 App
+## 推荐的App
 
 1. 医考帮（刷题、巩固）
-2. 思维导图软件（如知犀思维导图、MindMap、XMind、幕布、Project Graph、Graphics 等）
+2. 思维导图软件（如知犀思维导图、MindMap、XMind、幕布、Project Graph、Graphics等）
 3. 词典（查单词）、翻译软件
-4. Edge 浏览器（永远不要用手机系统自带的浏览器打开学校的任何网址，经常会出 Bug）
+4. Edge浏览器
 5. 学信网（学籍信息查询）
 6. 学习强国（党建学习）
 7. 山东教育发布（学校信息发布，少用）

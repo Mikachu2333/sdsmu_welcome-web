@@ -6,13 +6,13 @@ title: 常用公众号
 ::: note 说明
 
 1. 本篇内容的排名不分先后
-2. 如果你觉得还有其它没提及的公众号，欢迎向 [linkchou@yandex.com](mailto:linkchou@yandex.com) 投稿或在本项目的 [Issue 区](https://github.com/Mikachu2333/sdsmu_welcome-web/issues) 反馈！
+2. 如果你觉得还有其它没提及的公众号，欢迎向 [linkchou@yandex.com](mailto:linkchou@yandex.com) 投稿或在本项目的 [Issue区](https://github.com/Mikachu2333/sdsmu_welcome-web/issues) 反馈！
 
 :::
 
 ::: important
 
-1. 感谢“闪医 Spark Medicine 编辑部”各位同学建议与宣发！
+1. 感谢“闪医Spark Medicine编辑部”各位同学建议与宣发！
 2. 感谢“中华神兽之家”中各位同学对以下分享内容的贡献！
 
 :::
@@ -53,8 +53,8 @@ title: 常用公众号
 ## 考研公众号
 
 1. <QrCodeLink text="潍坊市招生考试研究院" qrcode="/resources/qrcodes/潍坊市招生考试研究院.jpg"></QrCodeLink>
-2. <QrCodeLink text="闪医 Spark Medicine" qrcode="/resources/qrcodes/闪医.jpg"></QrCodeLink>（咱校学长创建的公众号，有很多针对临床专业的期末复习资料）
-3. <QrCodeLink text="闪研 Spark Time" qrcode="/resources/qrcodes/闪研.jpg"></QrCodeLink>
+2. <QrCodeLink text="闪医SparkMedicine" qrcode="/resources/qrcodes/闪医.jpg"></QrCodeLink>（咱校学长创建的公众号，有很多针对临床专业的期末复习资料）
+3. <QrCodeLink text="闪研SparkTime" qrcode="/resources/qrcodes/闪研.jpg"></QrCodeLink>
 4. <QrCodeLink text="银城医考" qrcode="/resources/qrcodes/银城医考.jpg"></QrCodeLink> / <QrCodeLink text="医客亮哥" qrcode="/resources/qrcodes/医客亮哥.jpg"></QrCodeLink> / <QrCodeLink text="天天师兄" qrcode="/resources/qrcodes/天天师兄.jpg"></QrCodeLink>
 5. <QrCodeLink text="考研政治徐涛" qrcode="/resources/qrcodes/考研政治徐涛.jpg"></QrCodeLink> / <QrCodeLink text="腿姐考研政治课堂" qrcode="/resources/qrcodes/腿姐考研政治课堂.jpg"></QrCodeLink>
 6. <QrCodeLink text="小凯的医学之路" qrcode="/resources/qrcodes/小凯的医学之路.jpg"></QrCodeLink>（考研资料）
@@ -69,11 +69,11 @@ title: 常用公众号
 
 1. <QrCodeLink text="期刊分区表" qrcode="/resources/qrcodes/期刊分区表.jpg"></QrCodeLink>（期刊最新分区）
 2. <QrCodeLink text="浙江图书馆" qrcode="/resources/qrcodes/浙江图书馆.jpg"></QrCodeLink>（文献检索）
-3. <QrCodeLink text="CARSI 资源共享服务" qrcode="/resources/qrcodes/CARSI.jpg"></QrCodeLink>（文献查询）
+3. <QrCodeLink text="CARSI资源共享服务" qrcode="/resources/qrcodes/CARSI.jpg"></QrCodeLink>（文献查询）
 4. <QrCodeLink text="实验老司机" qrcode="/resources/qrcodes/实验老司机.jpg"></QrCodeLink>（科研操作）
 5. <QrCodeLink text="科研者之家" qrcode="/resources/qrcodes/科研者之家.jpg"></QrCodeLink>（生信分析、绘图）
 6. <QrCodeLink text="梅斯医学" qrcode="/resources/qrcodes/梅斯医学.jpg"></QrCodeLink>（查影响因子）
-7. <QrCodeLink text="ReadPaper 论文阅读" qrcode="/resources/qrcodes/ReadPaper.jpg"></QrCodeLink>（自动论文翻译）
+7. <QrCodeLink text="ReadPaper论文阅读" qrcode="/resources/qrcodes/ReadPaper.jpg"></QrCodeLink>（自动论文翻译）
 8. <QrCodeLink text="SCIPainter" qrcode="/resources/qrcodes/SCIPainter.jpg"></QrCodeLink>（科研绘图）
 9. <QrCodeLink text="特膳食品功能性原料开发" qrcode="/resources/qrcodes/特膳食品功能性原料开发.jpg"></QrCodeLink>（营养学前沿）
 10. <QrCodeLink text="生信与人工智能" qrcode="/resources/qrcodes/生信与人工智能.jpg"></QrCodeLink>（生信入门）
@@ -83,7 +83,7 @@ title: 常用公众号
 
 ### 科技类
 
-1. <QrCodeLink text="差评 X.PIN" qrcode="/resources/qrcodes/差评.jpg"></QrCodeLink>（当前的热门科技话题）
+1. <QrCodeLink text="差评X.PIN" qrcode="/resources/qrcodes/差评.jpg"></QrCodeLink>（当前的热门科技话题）
 2. <QrCodeLink text="笔吧测评室" qrcode="/resources/qrcodes/笔吧测评室.jpg"></QrCodeLink>（笔记本购买推荐）
 
 ### 科普类
@@ -94,4 +94,4 @@ title: 常用公众号
 
 ## 其它公众号
 
-1. <QrCodeLink text="中国信通院 CAICT" qrcode="/resources/qrcodes/中国信通院.jpg"></QrCodeLink>（一证通查）
+1. <QrCodeLink text="中国信通院CAICT" qrcode="/resources/qrcodes/中国信通院.jpg"></QrCodeLink>（一证通查）

@@ -51,7 +51,7 @@ title: 浮烟山校区 - 校园生活
 
 ## 玩
 
-1. 多数同学常通过步行前往南街，有 KTV、电影院等娱乐场所
+1. 多数同学常通过步行前往南街，有KTV、电影院等娱乐场所
 2. 汇金街每逢农历初三、初八、十三、十八、廿三、廿八有集
 3. 前往市区的公交线路详参见[此章节](/in_school/tutorial/others.md#公交信息与乘车指南)
 4. 文体中心（位置见[浮烟山校区整体地图](/in_school/campus_fuyanshan/maps/map_full.md)）内有羽毛球馆、篮球馆（两者互斥）、健身房，还有**游泳馆**等[^1]
@@ -85,32 +85,32 @@ title: 浮烟山校区 - 校园生活
     </tr>
     <tr>
       <td rowspan="2">健体中心</td>
-      <td>11:45 ～ 13:45</td>
-      <td rowspan="5" colspan="2">08:00 ～ 21:00</td>
+      <td>11:45～13:45</td>
+      <td rowspan="5" colspan="2">08:00～21:00</td>
       <td rowspan="2">略</td>
     </tr>
     <tr>
-      <td>18:00 ～ 21:00</td>
+      <td>18:00～21:00</td>
     </tr>
     <tr>
       <td rowspan="3">羽毛球馆</td>
-      <td>08:00 ～ 09:30</td>
+      <td>08:00～09:30</td>
       <td rowspan="3">略</td>
     </tr>
     <tr>
-      <td>12:00 ～ 13:30</td>
+      <td>12:00～13:30</td>
     </tr>
     <tr>
-      <td>18:00 ～ 21:00</td>
+      <td>18:00～21:00</td>
     </tr>
     <tr>
       <td rowspan="4">游泳馆</td>
-      <td rowspan="2">12:00 ～ 14:00</td>
-      <td colspan="2">09:00 ～ 11:00</td>
+      <td rowspan="2">12:00～14:00</td>
+      <td colspan="2">09:00～11:00</td>
       <td>略</td>
     </tr>
     <tr>
-      <td colspan="2">12:00 ～ 14:00</td>
+      <td colspan="2">12:00～14:00</td>
       <td>
         本时段仅周五开放
         <br />
@@ -118,21 +118,21 @@ title: 浮烟山校区 - 校园生活
       </td>
     </tr>
     <tr>
-      <td rowspan="2">18:00 ～ 20:00</td>
-      <td colspan="2">15:00 ～ 17:00</td>
+      <td rowspan="2">18:00～20:00</td>
+      <td colspan="2">15:00～17:00</td>
       <td rowspan="2">略</td>
     </tr>
     <tr>
-      <td colspan="2">18:00 ～ 20:00</td>
+      <td colspan="2">18:00～20:00</td>
     </tr>
     <tr>
       <td rowspan="2">乒乓球馆</td>
-      <td rowspan="2" colspan="2">18:00 ～ 20:00</td>
-      <td>08:00 ～ 12:00</td>
+      <td rowspan="2" colspan="2">18:00～20:00</td>
+      <td>08:00～12:00</td>
       <td rowspan="2">略</td>
     </tr>
     <tr>
-      <td>14:00 ～ 20:00</td>
+      <td>14:00～20:00</td>
     </tr>
   </tbody>
 </table>
@@ -162,7 +162,7 @@ title: 浮烟山校区 - 校园生活
       <td>山二医美团优选移动</td>
     </tr>
     <tr>
-      <td>9 号宿舍楼</td>
+      <td>9号宿舍楼</td>
       <td>山二医九号楼群内免费送货</td>
     </tr>
     <tr>
@@ -171,7 +171,7 @@ title: 浮烟山校区 - 校园生活
       <td>潍医多多买菜移动营业厅</td>
     </tr>
     <tr>
-      <td>9 号宿舍楼</td>
+      <td>9号宿舍楼</td>
       <td>山二医九号楼自提</td>
     </tr>
   </tbody>
@@ -193,72 +193,72 @@ title: 浮烟山校区 - 校园生活
     <tr>
       <td rowspan="17">大服</td>
       <td>厕所</td>
-      <td>–1 层东北</td>
+      <td>–1层东北</td>
       <td>略</td>
     </tr>
     <tr>
       <td>联通营业厅</td>
-      <td>1 层超市旁</td>
+      <td>1层超市旁</td>
       <td>联通业务办理</td>
     </tr>
     <tr>
       <td>赵一鸣</td>
-      <td>2 层西北</td>
+      <td>2层西北</td>
       <td>零食</td>
     </tr>
     <tr>
       <td>理发店（三家）</td>
-      <td>2 层</td>
+      <td>2层</td>
       <td>烫染剪发</td>
     </tr>
     <tr>
       <td>复印店（两家）</td>
-      <td>2 层</td>
+      <td>2层</td>
       <td><strong>打印复印扫描证件照</strong>、 复习资料</td>
     </tr>
     <tr>
       <td>电信营业厅</td>
-      <td>2 层</td>
+      <td>2层</td>
       <td>电信业务办理</td>
     </tr>
     <tr>
       <td>移动业务咨询处</td>
-      <td>2 层东</td>
+      <td>2层东</td>
       <td>移动业务咨询</td>
     </tr>
     <tr>
       <td>广电营业厅</td>
-      <td>2 层北</td>
+      <td>2层北</td>
       <td>广电业务办理</td>
     </tr>
     <tr>
       <td>干洗店</td>
-      <td>2 层东</td>
+      <td>2层东</td>
       <td>干洗、裁缝、实验服购买、配钥匙</td>
     </tr>
     <tr>
       <td>梦龙冰淇淋蛋糕</td>
-      <td>2 层东南</td>
+      <td>2层东南</td>
       <td>点心蛋糕</td>
     </tr>
     <tr>
       <td>维修店</td>
-      <td>2 层东南</td>
+      <td>2层东南</td>
       <td>手机电脑维修、配件购买</td>
     </tr>
     <tr>
       <td>牙科诊所</td>
-      <td>2 层西</td>
+      <td>2层西</td>
       <td>买药、看牙、<strong>冷藏药品</strong></td>
     </tr>
     <tr>
       <td><strong>办公室</strong></td>
-      <td>2 层东北</td>
+      <td>2层东北</td>
       <td>办水卡、充值退卡</td>
     </tr>
     <tr>
       <td>大服健身房</td>
-      <td>3 层</td>
+      <td>3层</td>
       <td>
         运动健身、办理会员卡
         <br />
@@ -267,38 +267,38 @@ title: 浮烟山校区 - 校园生活
     </tr>
     <tr>
       <td>台球厅</td>
-      <td>3 层</td>
+      <td>3层</td>
       <td>打台球</td>
     </tr>
     <tr>
       <td>彩购师</td>
-      <td>3 层</td>
+      <td>3层</td>
       <td>衣物与饰品购买</td>
     </tr>
     <tr>
       <td>学生印务</td>
-      <td>A106 对过</td>
+      <td>A106对过</td>
       <td>打印复印扫描、<strong>复习资料、二手书</strong></td>
     </tr>
     <tr>
       <td>移动营业厅</td>
-      <td>A104 对过</td>
+      <td>A104对过</td>
       <td colspan="2">移动业务办理</td>
     </tr>
     <tr>
       <td>酷跑文印社</td>
-      <td>A103 对过</td>
+      <td>A103对过</td>
       <td colspan="2">打印复印扫描</td>
     </tr>
     <tr>
       <td rowspan="5">其他</td>
       <td>证件照</td>
-      <td>B207 旁</td>
-      <td><strong>证件照</strong>、特殊复印（80g/120g 纸）</td>
+      <td>B207旁</td>
+      <td><strong>证件照</strong>、特殊复印（80g/120g纸）</td>
     </tr>
     <tr>
       <td><strong>证明打印</strong></td>
-      <td>D205 旁</td>
+      <td>D205旁</td>
       <td><strong>学籍证明、成绩证明</strong>等</td>
     </tr>
     <tr>

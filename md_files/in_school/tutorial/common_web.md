@@ -5,9 +5,9 @@ title: 常用网站
 ::: warning 警告
 
 1. 本节中所有标“㊕”的网址仅在连接校园网时可成功访问相关服务
-2. **严禁使用 QQ、微信直接打开本文提及的一切网址，必须使用正常更新的主流浏览器打开！**
+2. **严禁使用QQ、微信直接打开本文提及的一切网址，必须使用正常更新的主流浏览器打开！**
 
-   例如 Chrome、Edge、Firefox 等
+   例如Chrome、Edge、Firefox等
 
 :::
 
@@ -44,7 +44,7 @@ title: 常用网站
 7. 智慧学工（新生报到相关、新学工系统）：[https://zhxg.sdsmu.edu.cn](https://zhxg.sdsmu.edu.cn)
 8. 网上共青团（智慧团建）：[https://zhtj.youth.cn/zhtj/signin](https://zhtj.youth.cn/zhtj/signin)
 9. 安全中心：[https://cas.sdsmu.edu.cn:4102](https://cas.sdsmu.edu.cn:4102)
-10. 校园邮箱（SSL 安全登录）：[https://edu.icoremail.net](https://edu.icoremail.net)
+10. 校园邮箱（SSL安全登录）：[https://edu.icoremail.net](https://edu.icoremail.net)
 11. 校园邮箱（普通登录）：[https://mail.stu.sdsmu.edu.cn](https://mail.stu.sdsmu.edu.cn)
 
 ## 论文检索与下载
@@ -104,7 +104,7 @@ title: 常用网站
 
 ## 资格水平考试
 
-1. 执业医师资格考试：[2024 年版临床、口腔、公共卫生执业（助理）医师和乡村全科执业助理医师《医师资格考试大纲》](https://www.nhc.gov.cn/wjw/c100378/202312/e8d6ed3769b5468bb5d53e86b8b19379/files/1733999151110_90227.zip)
+1. 执业医师资格考试：[2024年版临床、口腔、公共卫生执业（助理）医师和乡村全科执业助理医师《医师资格考试大纲》](https://www.nhc.gov.cn/wjw/c100378/202312/e8d6ed3769b5468bb5d53e86b8b19379/files/1733999151110_90227.zip)
 2. 全国大学英语四、六级考试：[https://cet-kw.neea.edu.cn](https://cet-kw.neea.edu.cn)
 3. 国家普通话水平测试：[https://www.cltt.org](https://www.cltt.org)
 4. 全国计算机水平考试：[https://ncre.neea.edu.cn](https://ncre.neea.edu.cn)

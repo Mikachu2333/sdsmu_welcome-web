@@ -53,7 +53,7 @@ title: 致谢
 />
 
 <QrCodeBlock
-  text="闪医 Spark Medicine"
+  text="闪医Spark Medicine"
   qrcode="/resources/qrcodes/闪医.jpg"
 />
 
