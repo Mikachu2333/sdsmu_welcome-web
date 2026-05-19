@@ -184,7 +184,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 │       ├── life/                    #   校园安全与学习
 │       ├── further/                 #   就业与兼职
 │       ├── summary/                 #   组织信息汇总
-│       └── tutorial/               #   教程（8 篇）
+│       └── tutorial/               #   教程
 │
 └── 12 directories, 55 files
 ```

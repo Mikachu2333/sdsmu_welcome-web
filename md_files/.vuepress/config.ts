@@ -319,7 +319,11 @@ export default defineUserConfig({
     }),
     markdownMathPlugin({
       type: "mathjax",
-      output: "svg",
+      delimiters: "dollars",
+      output: "chtml",
+      chtml: {
+        mtextInheritFont: true,
+      },
     }),
   ],
 });

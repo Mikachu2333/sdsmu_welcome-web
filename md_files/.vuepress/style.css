@@ -1,14 +1,4 @@
 :root {
-  /* 全局字体与品牌色变量 */
-  --font-family:
-    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑",
-    "Noto Sans SC", sans-serif;
-  --font-family-code:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", "Cascadia Code", var(--font-family);
-
   /* VuePress variables */
   --c-brand: #3451b2;
   --c-brand-light: #3a5ccc;
@@ -38,6 +28,7 @@ html[data-theme="dark"],
 
 /* Adapt selectors */
 .theme-default-content {
+  font-family: var(--font-family);
   font-size: 16px;
   line-height: 2;
 }
@@ -274,4 +265,17 @@ html[data-theme="dark"]
   scroll-margin-top: calc(
     var(--header-offset, var(--vp-nav-height, 3.6rem)) + 0.5rem
   );
+}
+
+/* MathJax CHTML 公式：仅文本元素用混合字体，数学符号保留原生字体避免裁切 */
+mjx-utext,
+mjx-mtext,
+mjx-merror {
+  font-family: var(--font-family-mixed) !important;
+  line-height: 1;
+}
+
+/* 防止公式行内对齐偏移 */
+mjx-container {
+  vertical-align: middle;
 }
