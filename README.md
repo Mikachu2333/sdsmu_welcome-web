@@ -122,7 +122,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 ├── LICENSE-MIT                      # MIT（代码许可）
 ├── README.md                        # 项目说明（本文件）
 ├── WORKPLACE.code-workspace         # VS Code 工作区文件
-├── deploy.ps1                       # 手动部署脚本（推送 dist 到 gh-pages）
+├── deploy.ps1                       # 手动部署脚本（推送 dist 到 gh-pages，已基本弃用）
 ├── env.d.ts                         # Vue SFC 类型声明
 ├── favicon.afdesign                 # 网站图标源文件
 ├── netlify.toml                     # Netlify 部署配置
@@ -140,7 +140,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 │   │   ├── config.ts                # 主配置：主题、插件、侧边栏
 │   │   ├── client.ts                # 客户端入口：注册全局组件、加载样式
 │   │   ├── style.css                # 全局样式（暗色模式、CJK 排版、响应式）
-│   │   ├── custom-dict.txt          # jieba 分词自定义词典（278 条目）
+│   │   ├── custom-dict.txt          # jieba 分词自定义词典
 │   │   ├── components/              # 自定义 Vue 3 组件
 │   │   │   ├── FigureImage.vue      #   全宽图片（带标题与下载）
 │   │   │   ├── InlineImage.vue      #   行内小图标
@@ -163,22 +163,22 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 │   │   ├── cost.md                  #   费用与银行卡
 │   │   └── common_questions.md      #   常见问题
 │   │
-│   ├── doc_related/                 # 文档相关（5 篇）
+│   ├── doc_related/                 # 文档相关
 │   │   ├── thank_lists.md           #   致谢
 │   │   ├── copyright_statements.md  #   版权声明
 │   │   ├── document_introduction.md #   指南简介
 │   │   ├── calender.md              #   校历
 │   │   └── epilogue.md              #   后记
 │   │
-│   └── in_school/                   # 在校期间内容（26 篇）
+│   └── in_school/                   # 在校期间内容
 │       ├── campus_fuyanshan/        #   浮烟山校区
 │       │   ├── summary_fuyanshan.md #     校区概况
-│       │   ├── maps/                #     地图（4 篇）
+│       │   ├── maps/                #     地图
 │       │   ├── dormitory_fuyanshan.md #   宿舍
 │       │   └── school_life_fuyanshan.md # 校园生活
 │       ├── campus_yuhe/             #   虞河校区
 │       │   ├── summary_yuhe.md      #     校区概况
-│       │   ├── maps/                #     地图（3 篇）
+│       │   ├── maps/                #     地图
 │       │   ├── dormitory_yuhe.md    #     宿舍
 │       │   └── school_life_yuhe.md  #     校园生活
 │       ├── life/                    #   校园安全与学习
@@ -197,4 +197,4 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
    - `ncu`
 3. 升级 packages
    - `ncu -u`
-   - 注意：VuePress 生态插件使用 `rc` 版本标签，`ncu -u` 可能不会检出最新版本，需要手动核对
+   - 注意：VuePress 生态插件在升级后需确保版本号一致
