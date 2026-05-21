@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Noto Sans SC";
+  src:
+    local("Noto Sans SC"),
+    local("Noto Sans SC Regular"),
+    local("NotoSansSC-Regular"),
+    local("Noto Sans CJK SC"),
+    local("Noto Sans CJK SC Regular"),
+    local("Noto Sans SC Variable"),
+    local("Source Han Sans CN"),
+    local("Source Han Sans CN Regular"),
+    local("SourceHanSansCN-Regular"),
+    local("Source Han Sans SC"),
+    local("Source Han Sans SC Regular"),
+    local("SourceHanSansSC-Regular"),
+    local("Source Han Sans CN VF"),
+    local("Source Han Sans SC VF"),
+    url("/fonts/NotoSansSC-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  src:
+    local("Noto Sans SC Bold"),
+    local("NotoSansSC-Bold"),
+    local("Noto Sans CJK SC Bold"),
+    local("Noto Sans SC Variable"),
+    local("Source Han Sans CN Bold"),
+    local("SourceHanSansCN-Bold"),
+    local("Source Han Sans SC Bold"),
+    local("SourceHanSansSC-Bold"),
+    local("Source Han Sans CN VF"),
+    local("Source Han Sans SC VF"),
+    url("/fonts/NotoSansSC-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src:
+    local("Cascadia Code"),
+    local("CascadiaCode-Regular"),
+    url("/fonts/CascadiaCode-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  /* 排除 U+2018–U+201D 中文引号，使其回落给 CJK 字体获取全角字形 */
+  unicode-range: U+0021-007E;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src:
+    local("Cascadia Code Bold"),
+    local("CascadiaCode-Bold"),
+    url("/fonts/CascadiaCode-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: U+0021-007E;
+}
+
+:root {
+  /* 优先使用系统原生 UI 字体，fallback 到 Noto Sans SC */
+  --font-family-text:
+    system-ui, -apple-system, BlinkMacSystemFont, Ubuntu, "PingFang SC",
+    "Microsoft YaHei", "微软雅黑", "MiSans L3", "HarmonyOS Sans SC",
+    "HONOR Sans CN", "MiSans", "OPPO Sans 4.0", "vivo Sans SC L3", "vivo Sans",
+    "vivo Sans SC VF", "Noto Sans SC", sans-serif;
+
+  /* 优先使用系统自带的等宽编程字体，fallback 触发 Cascadia Code */
+  --font-family-mono: "Cascadia Code";
+
+  /* 组合字体：优先使用等宽字体显示数字和英文，fallback 到中文字体 */
+  --font-family: var(--font-family-mono), var(--font-family-text);
+}
