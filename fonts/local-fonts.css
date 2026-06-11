@@ -50,7 +50,9 @@
   font-weight: 400;
   font-display: swap;
   /* 排除 U+2018–U+201D 中文引号，使其回落给 CJK 字体获取全角字形 */
-  unicode-range: U+0021-007E;
+  unicode-range:
+    U+0020-2017, U+201A-201B, U+201E-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -62,7 +64,9 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  unicode-range: U+0021-007E;
+  unicode-range:
+    U+0020-2017, U+201A-201B, U+201E-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 :root {
@@ -73,8 +77,11 @@
     "HONOR Sans CN", "MiSans", "OPPO Sans 4.0", "vivo Sans SC L3", "vivo Sans",
     "vivo Sans SC VF", "Noto Sans SC", sans-serif;
 
-  /* 优先使用系统自带的等宽编程字体，fallback 触发 Cascadia Code */
-  --font-family-mono: "Cascadia Code";
+  /* 等宽字体栈：Cascadia Code → 系统等宽 → 中文字体回落 */
+  --font-family-mono: "Cascadia Code", ui-monospace, var(--font-family-text);
+
+  --code-font-family: var(--font-family-mono);
+  --font-family-code: var(--font-family-mono);
 
   /* 组合字体：优先使用等宽字体显示数字和英文，fallback 到中文字体 */
   --font-family: var(--font-family-mono), var(--font-family-text);
