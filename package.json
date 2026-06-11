@@ -1,5 +1,5 @@
 {
-  "version": "2026.5.27",
+  "version": "2026.6.11",
   "name": "sdsmu_welcome-web",
   "description": "山东第二医科大学指南 Web 版。",
   "keywords": [
@@ -26,7 +26,7 @@
     "@vuepress/plugin-markdown-stylize": "^2.0.0-rc.130",
     "@vuepress/plugin-slimsearch": "2.0.0-rc.130",
     "@vuepress/theme-default": "^2.0.0-rc.130",
-    "sass": "^1.99.0",
+    "sass": "^1.100.0",
     "vuepress": "^2.0.0-rc.30"
   },
   "scripts": {
