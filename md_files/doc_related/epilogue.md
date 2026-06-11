@@ -30,7 +30,7 @@ title: 后记
 
 ### 文字显示
 
-自豪地使用[梦源宋体](https://www.maoken.com/freefonts/15311.html)（[思源宋体](https://github.com/adobe-fonts/source-han-serif)的改版，降低了文字的行高）进行排版，作为宋体糟糕显示效果的替代品。2025 年 5 月 24 日，因梦源宋体更新不及时，重新使用 [Noto Serif CJK SC](https://github.com/notofonts/noto-cjk)（实际上就是思源宋体，只不过换了个名字）。
+自豪地使用[梦源宋体](https://github.com/Pal3love/dream-han-cjk)（[思源宋体](https://github.com/adobe-fonts/source-han-serif)的改版，降低了文字的行高）进行排版，作为宋体糟糕显示效果的替代品。2025年5月24日，因梦源宋体更新不及时，重新使用 [Noto Serif CJK SC](https://github.com/notofonts/noto-cjk)（实际上就是思源宋体，只不过换了个名字）。2026年，将思源宋体换成思源黑体，以加强“指南”在屏幕上的显示效果和用户体验。
 
 ### 图片改进与压缩
 
