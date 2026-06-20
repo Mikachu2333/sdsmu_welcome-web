@@ -91,6 +91,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 7. 大量使用了 AI 协助排版，内容无任何 AI
 8. 禁止使用UTF-8单位符号，例如 `％`、`℃`、`cm`等，否则无法搜索
 9. 写作时禁止在正文中随意加入空格，否则将导致难以搜索
+10. 致谢部分除非长篇累牍地引用，或始终在为项目贡献，否则不应写入 `md_files/doc_related/thank_lists.md`，仅在引用旁使用 `::: important 致谢` 做感谢即可
 
 ## 本地构建与运行
 
