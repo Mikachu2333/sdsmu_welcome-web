@@ -117,7 +117,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 
 ```text
 ./
-├── CLAUDE.md                        # Claude Code 项目说明
+├── AGENTS.md                        # AGENTS 说明
 ├── CODE_OF_CONDUCT.md               # 贡献者行为准则
 ├── LICENSE-CC                       # CC BY-SA 4.0（内容许可）
 ├── LICENSE-MIT                      # MIT（代码许可）

@@ -563,7 +563,7 @@ title: 不便分类的教程
 详细选购指南可参考如下链接（请注意文章发布日期，以该公众号最新文章为准，此处可能更新不及时）：
 
 1. [【小白必读】笔吧科普＆祛魅＆购机指南](https://www.kdocs.cn/l/chzEHrH90jRz)
-2. [【小白必看】笔记本电脑选购指南](https://mp.weixin.qq.com/s/qCVQKSEGgFTtEQl-CuHKIQ)
+2. [【小白必看】笔记本电脑选购指南](https://mp.weixin.qq.com/s/levOZShNdKuGBaWf8deRzA)
 
 ## 教育部认可的全国大学生学科竞赛A类竞赛目录清单
 

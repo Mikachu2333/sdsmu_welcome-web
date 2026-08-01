@@ -30,7 +30,7 @@ title: 常用公众号
 5. <QrCodeLink text="山东第二医科大学附属医院服务号" qrcode="/resources/qrcodes/山东第二医科大学附属医院服务号.jpg"></QrCodeLink>
 6. <QrCodeLink text="山东第二医科大学图书馆" qrcode="/resources/qrcodes/山东第二医科大学图书馆.jpg"></QrCodeLink>
 7. <QrCodeLink text="山东第二医科大学智慧校园" qrcode="/resources/qrcodes/山东第二医科大学智慧校园.jpg"></QrCodeLink>
-8. <QrCodeLink text="山东第二医科大学报" qrcode="/resources/qrcodes/山东第二医科大学智慧校园.jpg"></QrCodeLink>
+8. <QrCodeLink text="山东第二医科大学报" qrcode="/resources/qrcodes/山东第二医科大学报.jpg"></QrCodeLink>
 9. <QrCodeLink text="山东第二医科大学学生会" qrcode="/resources/qrcodes/山东第二医科大学学生会.jpg"></QrCodeLink>
 10. <QrCodeLink text="青春山东" qrcode="/resources/qrcodes/青春山东.jpg"></QrCodeLink>
 11. <QrCodeLink text="青春山二医" qrcode="/resources/qrcodes/青春山二医.jpg"></QrCodeLink>
