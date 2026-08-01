@@ -58,6 +58,7 @@ const floorSvgMarkupMap = ref({
   "4F": "",
 });
 const activeSvgContainer = ref(null);
+const loadingFloor = ref(null);
 // 缓存各层的文本节点和片区节点以加速搜索
 let textIndexByFloor = {
   B1F: [],
@@ -247,24 +248,45 @@ const buildZoneIndex = (floor) => {
 
 // 异步加载对应楼层的 SVG 文件并建立索引缓存
 const loadFloorSvg = async (floor) => {
-  if (!floorSvgMarkupMap.value[floor]) {
-    const path = floorSvgPathMap[floor];
-    // 查找是否已经有相同 path 的 SVG 加载过（例如 3F 和 4F 共用同一个文件）
-    const cachedFloor = Object.keys(floorSvgMarkupMap.value).find(
-      (k) => floorSvgPathMap[k] === path && floorSvgMarkupMap.value[k]
-    );
+  if (loadingFloor.value === floor) return;
 
-    if (cachedFloor) {
-      floorSvgMarkupMap.value[floor] = floorSvgMarkupMap.value[cachedFloor];
-    } else {
-      const response = await fetch(withBase(path));
-      floorSvgMarkupMap.value[floor] = await response.text();
+  try {
+    loadingFloor.value = floor;
+    if (!floorSvgMarkupMap.value[floor]) {
+      const svgPath = floorSvgPathMap[floor];
+      const cachedFloor = Object.keys(floorSvgMarkupMap.value).find(
+        (key) =>
+          floorSvgPathMap[key] === svgPath && floorSvgMarkupMap.value[key],
+      );
+
+      if (cachedFloor) {
+        floorSvgMarkupMap.value[floor] = floorSvgMarkupMap.value[cachedFloor];
+      } else {
+        const response = await fetch(withBase(svgPath));
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const markup = await response.text();
+        if (!/^\s*(?:<\?xml[^>]*>\s*)?(?:<!DOCTYPE[^>]*>\s*)?<svg[\s>]/i.test(markup)) {
+          throw new Error("响应内容不是有效的 SVG");
+        }
+        floorSvgMarkupMap.value[floor] = markup;
+      }
     }
-  }
 
-  await nextTick();
-  buildTextIndex(floor);
-  buildZoneIndex(floor);
+    await nextTick();
+    buildTextIndex(floor);
+    buildZoneIndex(floor);
+  } catch (error) {
+    floorSvgMarkupMap.value[floor] = "";
+    searchMessage.value = `无法加载 ${floor} 地图，请稍后重试`;
+    searchError.value = true;
+    console.error(`Failed to load ${floor} map:`, error);
+    throw error;
+  } finally {
+    loadingFloor.value = null;
+  }
 };
 
 // 为命中搜索条件的文字添加高亮样式
@@ -320,13 +342,20 @@ const searchDoor = async () => {
     targetFloor = "2F";
   }
 
-  if (targetFloor && activeFloor.value !== targetFloor) {
-    await switchFloor(targetFloor);
-  }
+  try {
+    if (targetFloor && activeFloor.value !== targetFloor) {
+      const loaded = await switchFloor(targetFloor);
+      if (!loaded) return;
+    }
 
-  // 确保DOM索引最新
-  if (!floorSvgMarkupMap.value[activeFloor.value] || textIndexByFloor[activeFloor.value].length === 0) {
-    await loadFloorSvg(activeFloor.value);
+    if (
+      !floorSvgMarkupMap.value[activeFloor.value] ||
+      textIndexByFloor[activeFloor.value].length === 0
+    ) {
+      await loadFloorSvg(activeFloor.value);
+    }
+  } catch {
+    return;
   }
 
   const textIndex = textIndexByFloor[activeFloor.value];
@@ -381,12 +410,18 @@ const switchFloor = async (floor) => {
   activeFloor.value = floor;
   searchMessage.value = `当前 ${floor}，支持格式 xxxxx（纯数字）`;
   searchError.value = false;
-  await loadFloorSvg(floor);
+  try {
+    await loadFloorSvg(floor);
+    return true;
+  } catch {
+    // loadFloorSvg already exposes a user-facing error message.
+    return false;
+  }
 };
 
 onMounted(() => {
   searchMessage.value = "支持 -1～4 层门牌号搜索（格式：xxxxx，纯数字）";
-  loadFloorSvg(activeFloor.value);
+  void loadFloorSvg(activeFloor.value).catch(() => {});
 });
 </script>
 

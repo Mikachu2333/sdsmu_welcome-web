@@ -1,7 +1,7 @@
 <template>
     <div class="file-download-container">
         <span class="file-name">{{ name }}</span>
-        <a href="javascript:void(0)" @click="handleDownload" class="download-btn">
+        <a :href="withBase(href)" :download="downloadName || name" class="download-btn">
             下载
         </a>
     </div>
@@ -10,7 +10,7 @@
 <script setup>
 import { withBase } from "@vuepress/client"
 
-const props = defineProps({
+defineProps({
     href: {
         type: String,
         required: true
@@ -24,14 +24,6 @@ const props = defineProps({
         default: undefined
     }
 })
-
-const handleDownload = () => {
-    const link = document.createElement("a")
-    link.href = withBase(props.href)
-    link.download = props.downloadName || props.name
-    link.target = "_blank"
-    link.click()
-}
 </script>
 
 <style scoped>
