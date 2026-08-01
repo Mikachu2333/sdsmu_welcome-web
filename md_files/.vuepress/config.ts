@@ -306,7 +306,11 @@ export default defineUserConfig({
       },
       customFields: [
         {
-          getter: (page) => page.frontmatter.tags as string[] | undefined,
+          getter: (page) => {
+            const tags = page.frontmatter.tags ?? page.frontmatter.tag;
+            if (Array.isArray(tags)) return tags.map(String);
+            return typeof tags === "string" ? [tags] : undefined;
+          },
           formatter: "标签：$content",
         },
       ],

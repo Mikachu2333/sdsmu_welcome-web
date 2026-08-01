@@ -6,7 +6,7 @@ title: 其它推荐的资源
 
 1. [你缺失的那门计算机课](https://www.criwits.top/missing/)
 2. [计算机基础技能](https://ac-wiki.org/general-skills/computer-basic/SurfingTutorial/)
-3. [计算机教育中缺失的一课](计算机教育中缺失的一课)
+3. [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)
 
 ## 编程
 
