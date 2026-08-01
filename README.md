@@ -39,41 +39,41 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 > 看到此处则默认你已经看完了上面的markdown入门基本知识
 
 1. 图片插入
-   1. 插入不缩放的大图片请参考 [`map_full.md`](md_files/in_school/campus_fuyanshan/maps/map_full.md) 中的做法，注意图片 svg 与 webp 的问题（仅地图需要两个）
+    1. 插入不缩放的大图片请参考 [`map_full.md`](md_files/in_school/campus_fuyanshan/maps/map_full.md) 中的做法，注意图片 svg 与 webp 的问题（仅地图需要两个）
 
-      `<FigureImage src="图片路径" title="自己起的自定义标题" downloadLink="图片路径（通常和上面的一致，仅地图有svg与webp之分）"></FigureImage>`
+        `<FigureImage src="图片路径" title="自己起的自定义标题" downloadLink="图片路径（通常和上面的一致，仅地图有svg与webp之分）"></FigureImage>`
 
-   2. 行内图片（自动缩放）请参考 [`life.md` 浴室预约与使用-浮烟山校区](md_files/in_school/tutorial/life.md#浴室预约与使用)的文本
+    2. 行内图片（自动缩放）请参考 [`life.md` 浴室预约与使用-浮烟山校区](md_files/in_school/tutorial/life.md#浴室预约与使用)的文本
 
-      `前面的文字 <InlineImage src="图片路径"></InlineImage> 后面的文字`
+        `前面的文字 <InlineImage src="图片路径"></InlineImage> 后面的文字`
 
 2. 提示块
 
-   ```markdown
-   ::: 此处需根据具体情况从以下几项中选择
-   文字
-   :::
-   ```
+    ```markdown
+    ::: 此处需根据具体情况从以下几项中选择
+    文字
+    :::
+    ```
 
-   - `tip` 因格式原因不便在正文处给出的注释
-   - `warning` 警告
-   - `info` 相关信息
-   - `note` 提示
-   - `important` 重要提示，少用
+    - `tip` 因格式原因不便在正文处给出的注释
+    - `warning` 警告
+    - `info` 相关信息
+    - `note` 提示
+    - `important` 重要提示，少用
 
 3. 强调请参考 [`thank_lists.md` 的最后](md_files/doc_related/thank_lists.md)
 
-   <span style="color:red; font-weight:bold; background:yellow">严禁在标题中使用加粗等自定义格式，将导致无法搜索！</span>
-   1. 加粗代码为 `font-size:2em;`
-   2. 字体颜色通用代码为 `color:rgb(0,0,0);`，特殊颜色可以直接写英文
-   3. 背景色通用代码为 `background:rgb(0,0,0);`，特殊颜色可以直接写英文
-   4. 字体加粗为 `font-weight:bold;`
+    <span style="color:red; font-weight:bold; background:yellow">严禁在标题中使用加粗等自定义格式，将导致无法搜索！</span>
+    1. 加粗代码为 `font-size:2em;`
+    2. 字体颜色通用代码为 `color:rgb(0,0,0);`，特殊颜色可以直接写英文
+    3. 背景色通用代码为 `background:rgb(0,0,0);`，特殊颜色可以直接写英文
+    4. 字体加粗为 `font-weight:bold;`
 
-   综合示例如下：
+    综合示例如下：
 
-   ```markdown
-   <span style="font-size:2em; color:red; font-weight:bold; background:yellow">需要加粗的文本，效果为大字、红色、背景黄色</span>
-   ```
+    ```markdown
+    <span style="font-size:2em; color:red; font-weight:bold; background:yellow">需要加粗的文本，效果为大字、红色、背景黄色</span>
+    ```
 
 4. 双下划线请参考 [`dormitory_fuyanshan.md`](/md_files/in_school/campus_fuyanshan/dormitory_fuyanshan.md#住宿注意事项)
 5. 文字标红参考 [`study.md`](/md_files/in_school/life/study.md#杂项)
@@ -98,16 +98,16 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 - 双击 `WORKPLACE.code-workspace` 以打开 VSCode 工作区
 - 开始编辑
 - 本地运行
-  1. 打开终端，首次运行输入 `npm install` 安装依赖（移动目录后需先移除 `md_files/.vuepress/.cache` 文件夹，再执行 `npm install`，否则会报错）
-  2. 本地预览：`npm run docs:dev`
-  3. 本地构建：`npm run docs:build`
+    1. 打开终端，首次运行输入 `npm install` 安装依赖（移动目录后需先移除 `md_files/.vuepress/.cache` 文件夹，再执行 `npm install`，否则会报错）
+    2. 本地预览：`npm run docs:dev`
+    3. 本地构建：`npm run docs:build`
 - 上传修改后的文件到 GitHub 仓库
-  1. 上传前先运行 `git pull` 同步远程仓库的修改
-  2. 通过 lazygit 或 VSCode 侧栏提交修改，或 `git add . && git commit -m "提交说明"`
-  3. 通过 lazygit 或 `git push` 推送修改
+    1. 上传前先运行 `git pull` 同步远程仓库的修改
+    2. 通过 lazygit 或 VSCode 侧栏提交修改，或 `git add . && git commit -m "提交说明"`
+    3. 通过 lazygit 或 `git push` 推送修改
 - 部署构建产物到服务器
-  1. 运行 `npm run docs:build` 构建文件
-  2. 将 `md_files/.vuepress/dist` 目录中的**所有内容**上传到服务器对应目录，主页指向 `index.html`
+    1. 运行 `npm run docs:build` 构建文件
+    2. 将 `md_files/.vuepress/dist` 目录中的**所有内容**上传到服务器对应目录，主页指向 `index.html`
 
 **注意**：移动项目目录后需先删除 `md_files/.vuepress/.cache`，再执行 `npm install`，否则会报错
 
@@ -193,11 +193,11 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 ## 依赖升级
 
 1. 安装 `ncu`
-   - `npm install -g npm-check-updates`
+    - `npm install -g npm-check-updates`
 2. 查看可升级的 package
-   - `ncu`
+    - `ncu`
 3. 升级 packages
-   - `ncu -u`
-   - `vuepress`、`@vuepress/client`、`@vuepress/bundler-vite` 的版本号必须一致
-   - `@vuepress/plugin-markdown-container`、`@vuepress/plugin-markdown-ext`、`@vuepress/plugin-markdown-hint`、`@vuepress/plugin-markdown-math`、`@vuepress/plugin-markdown-stylize`、`@vuepress/plugin-slimsearch`、`@vuepress/theme-default` 的版本号必须一致
-   - 仅当同组所有 package 都存在同一目标版本，且两组的 peer dependencies 兼容时才允许升级；任一 package 缺少目标版本时，整组均不升级，禁止混用不同版本号
+    - `ncu -u`
+    - `vuepress`、`@vuepress/client`、`@vuepress/bundler-vite` 的版本号必须一致
+    - `@vuepress/plugin-markdown-container`、`@vuepress/plugin-markdown-ext`、`@vuepress/plugin-markdown-hint`、`@vuepress/plugin-markdown-math`、`@vuepress/plugin-markdown-stylize`、`@vuepress/plugin-slimsearch`、`@vuepress/theme-default` 的版本号必须一致
+    - 仅当同组所有 package 都存在同一目标版本，且两组的 peer dependencies 兼容时才允许升级；任一 package 缺少目标版本时，整组均不升级，禁止混用不同版本号
