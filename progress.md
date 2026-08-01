@@ -29,8 +29,15 @@
 
 ## Remaining
 
-- Final clean-install verification and parent diff review remain
 - Large font and ZIP assets are documented performance costs; moving or subsetting them requires a separate content/deployment decision
+
+## Final validation
+
+- Removed `node_modules` and completed a clean `npm ci` from the regenerated lockfile
+- `npm ls --depth=0` passed with the required VuePress version groups
+- Production build rendered all 41 pages successfully
+- Package audit reports zero known vulnerabilities
+- Final Git worktree is clean
 
 ## Review fixes
 
