@@ -123,7 +123,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 ├── LICENSE-MIT                      # MIT（代码许可）
 ├── README.md                        # 项目说明（本文件）
 ├── WORKPLACE.code-workspace         # VS Code 工作区文件
-├── deploy.ps1                       # 手动部署脚本（推送 dist 到 gh-pages，已基本弃用）
+├── deploy.ps1                       # 已弃用的 GitHub Pages 部署脚本，请勿使用
 ├── env.d.ts                         # Vue SFC 类型声明
 ├── favicon.afdesign                 # 网站图标源文件
 ├── netlify.toml                     # Netlify 部署配置
@@ -198,4 +198,6 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
    - `ncu`
 3. 升级 packages
    - `ncu -u`
-   - 注意：VuePress 生态插件在升级后需确保版本号一致
+   - `vuepress`、`@vuepress/client`、`@vuepress/bundler-vite` 的版本号必须一致
+   - `@vuepress/plugin-markdown-container`、`@vuepress/plugin-markdown-ext`、`@vuepress/plugin-markdown-hint`、`@vuepress/plugin-markdown-math`、`@vuepress/plugin-markdown-stylize`、`@vuepress/plugin-slimsearch`、`@vuepress/theme-default` 的版本号必须一致
+   - 仅当同组所有 package 都存在同一目标版本，且两组的 peer dependencies 兼容时才允许升级；任一 package 缺少目标版本时，整组均不升级，禁止混用不同版本号

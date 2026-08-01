@@ -3,4 +3,4 @@
   publish = "md_files/.vuepress/dist"
 
 [context.production]
-  environment = { NODE_VERSION = "20" }
+  environment = { NODE_VERSION = "24" }

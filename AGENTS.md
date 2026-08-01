@@ -75,6 +75,15 @@ No Tailwind — all custom CSS in `style.css`. Uses VuePress CSS custom properti
 
 The `package.json` version (`2026.4.17`) uses a date-based `YYYY.M.D` scheme, not semver.
 
+### Dependency upgrades
+
+Keep the VuePress ecosystem in these synchronized version groups:
+
+- `vuepress`, `@vuepress/client`, and `@vuepress/bundler-vite` must use the same version
+- `@vuepress/plugin-markdown-container`, `@vuepress/plugin-markdown-ext`, `@vuepress/plugin-markdown-hint`, `@vuepress/plugin-markdown-math`, `@vuepress/plugin-markdown-stylize`, `@vuepress/plugin-slimsearch`, and `@vuepress/theme-default` must use the same version
+
+Do not upgrade a group unless the target version exists for every package in that group and the resulting groups are peer-compatible. In particular, do not substitute a missing package version with a different release number.
+
 ### Deployment
 
-Primary: Netlify (`netlify.toml`, Node 20, publish `md_files/.vuepress/dist`). Secondary: GitHub Pages via Actions (`.github/workflows/deploy.yml`). The `deploy.ps1` script is a manual alternative that force-pushes the dist directory to `gh-pages`.
+Netlify is the only supported deployment target (`netlify.toml`, Node 24, publish `md_files/.vuepress/dist`). GitHub Pages and `deploy.ps1` are legacy and must not be used for deployment.
