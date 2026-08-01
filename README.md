@@ -123,7 +123,7 @@ The code of this project is licensed under [MIT LICENSE](./LICENSE-MIT), and the
 ├── LICENSE-MIT                      # MIT（代码许可）
 ├── README.md                        # 项目说明（本文件）
 ├── WORKPLACE.code-workspace         # VS Code 工作区文件
-├── deploy.ps1                       # 已弃用的 GitHub Pages 部署脚本，请勿使用
+├── deploy.ps1                       # 已禁用的 GitHub Pages 部署脚本，仅保留迁移提示
 ├── env.d.ts                         # Vue SFC 类型声明
 ├── favicon.afdesign                 # 网站图标源文件
 ├── netlify.toml                     # Netlify 部署配置

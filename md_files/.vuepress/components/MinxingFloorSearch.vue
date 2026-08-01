@@ -58,7 +58,7 @@ const floorSvgMarkupMap = ref({
   "4F": "",
 });
 const activeSvgContainer = ref(null);
-const loadingFloor = ref(null);
+const floorLoadPromises = new Map();
 // 缓存各层的文本节点和片区节点以加速搜索
 let textIndexByFloor = {
   B1F: [],
@@ -248,44 +248,57 @@ const buildZoneIndex = (floor) => {
 
 // 异步加载对应楼层的 SVG 文件并建立索引缓存
 const loadFloorSvg = async (floor) => {
-  if (loadingFloor.value === floor) return;
-
   try {
-    loadingFloor.value = floor;
     if (!floorSvgMarkupMap.value[floor]) {
-      const svgPath = floorSvgPathMap[floor];
-      const cachedFloor = Object.keys(floorSvgMarkupMap.value).find(
-        (key) =>
-          floorSvgPathMap[key] === svgPath && floorSvgMarkupMap.value[key],
-      );
+      let loadPromise = floorLoadPromises.get(floor);
+      if (!loadPromise) {
+        loadPromise = (async () => {
+          const svgPath = floorSvgPathMap[floor];
+          const cachedFloor = Object.keys(floorSvgMarkupMap.value).find(
+            (key) =>
+              floorSvgPathMap[key] === svgPath && floorSvgMarkupMap.value[key],
+          );
 
-      if (cachedFloor) {
-        floorSvgMarkupMap.value[floor] = floorSvgMarkupMap.value[cachedFloor];
-      } else {
-        const response = await fetch(withBase(svgPath));
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}`);
-        }
+          if (cachedFloor) {
+            return floorSvgMarkupMap.value[cachedFloor];
+          }
 
-        const markup = await response.text();
-        if (!/^\s*(?:<\?xml[^>]*>\s*)?(?:<!DOCTYPE[^>]*>\s*)?<svg[\s>]/i.test(markup)) {
-          throw new Error("响应内容不是有效的 SVG");
+          const response = await fetch(withBase(svgPath));
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const markup = await response.text();
+          if (!/^\s*(?:<\?xml[^>]*>\s*)?(?:<!DOCTYPE[^>]*>\s*)?<svg[\s>]/i.test(markup)) {
+            throw new Error("响应内容不是有效的 SVG");
+          }
+          return markup;
+        })();
+        floorLoadPromises.set(floor, loadPromise);
+      }
+
+      try {
+        floorSvgMarkupMap.value[floor] = await loadPromise;
+      } finally {
+        if (floorLoadPromises.get(floor) === loadPromise) {
+          floorLoadPromises.delete(floor);
         }
-        floorSvgMarkupMap.value[floor] = markup;
       }
     }
 
     await nextTick();
-    buildTextIndex(floor);
-    buildZoneIndex(floor);
+    if (activeFloor.value === floor) {
+      buildTextIndex(floor);
+      buildZoneIndex(floor);
+    }
   } catch (error) {
     floorSvgMarkupMap.value[floor] = "";
-    searchMessage.value = `无法加载 ${floor} 地图，请稍后重试`;
-    searchError.value = true;
+    if (activeFloor.value === floor) {
+      searchMessage.value = `无法加载 ${floor} 地图，请稍后重试`;
+      searchError.value = true;
+    }
     console.error(`Failed to load ${floor} map:`, error);
     throw error;
-  } finally {
-    loadingFloor.value = null;
   }
 };
 

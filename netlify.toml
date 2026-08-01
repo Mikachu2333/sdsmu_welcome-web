@@ -2,5 +2,5 @@
   command = "npm run docs:build"
   publish = "md_files/.vuepress/dist"
 
-[context.production]
-  environment = { NODE_VERSION = "24" }
+[build.environment]
+  NODE_VERSION = "24"

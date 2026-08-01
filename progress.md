@@ -29,6 +29,11 @@
 
 ## Remaining
 
-- Independent review is running
-- Final clean-install verification and review-fix pass remain
+- Final clean-install verification and parent diff review remain
 - Large font and ZIP assets are documented performance costs; moving or subsetting them requires a separate content/deployment decision
+
+## Review fixes
+
+- Replaced the floor loader's single loading flag with per-floor shared promises, so concurrent searches await the same request
+- Applied Node 24 to every Netlify build context
+- Disabled the legacy GitHub Pages deployment script
