@@ -1,11 +1,11 @@
 import { defineClientConfig } from "@vuepress/client";
-import { defineAsyncComponent } from "vue";
 import FileDownload from "./components/FileDownload.vue";
 import FigureImage from "./components/FigureImage.vue";
 import InlineImage from "./components/InlineImage.vue";
 import Donate from "./components/Donate.vue";
 import QrCodeLink from "./components/QrCodeLink.vue";
 import QrCodeBlock from "./components/QrCodeBlock.vue";
+import MinxingFloorSearch from "./components/MinxingFloorSearch.vue";
 import "./style.css";
 
 export default defineClientConfig({
@@ -16,10 +16,7 @@ export default defineClientConfig({
     app.component("Donate", Donate);
     app.component("QrCodeLink", QrCodeLink);
     app.component("QrCodeBlock", QrCodeBlock);
-    app.component(
-      "MinxingFloorSearch",
-      defineAsyncComponent(() => import("./components/MinxingFloorSearch.vue")),
-    );
+    app.component("MinxingFloorSearch", MinxingFloorSearch);
   },
   setup() {},
 
