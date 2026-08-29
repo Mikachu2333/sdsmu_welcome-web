@@ -10,7 +10,7 @@ title: 致谢
 
 ## 内容改进与支持
 
-[山东第二医科大学临床医学院](https://xchb.sdsmu.edu.cn)
+[山东第二医科大学临床医学院](https://lcyxy.sdsmu.edu.cn)
 
 [山东第二医科大学康复医学院](https://kfyxy.sdsmu.edu.cn)
 
