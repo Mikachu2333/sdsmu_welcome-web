@@ -189,12 +189,14 @@ const clearTextHighlights = (floor) => {
   highlightedTextElsByFloor[floor] = [];
 };
 
-// 清除对应楼层片区（划定区域）的高亮状态
+// 清除对应楼层片区（划定区域）的高亮状态，并还原片区原本的内联样式
 const clearZoneHighlights = (floor) => {
   highlightedZoneElsByFloor[floor].forEach((el) => {
     if (el) {
       el.classList.remove("svg-zone-hit");
       el.classList.remove("svg-zone-hit-alt");
+      // 移除闪烁动画注入的原色变量，让 fill 回到片区自身内联样式
+      el.style.removeProperty("--zone-origin-fill");
     }
   });
   highlightedZoneElsByFloor[floor] = [];
@@ -241,6 +243,8 @@ const buildZoneIndex = (floor) => {
         element,
         id: id.toLowerCase(),
         range,
+        // 索引建立时元素尚未被高亮，此时记录的填充色即为片区原色
+        originFill: element.style.fill || getComputedStyle(element).fill,
       };
     })
     .filter(Boolean);
@@ -306,23 +310,33 @@ const loadFloorSvg = async (floor) => {
 const highlightTextMatches = (floor, matches) => {
   clearTextHighlights(floor);
   matches.forEach((match) => {
-    // 强制触发重绘，重启CSS动画
     match.element.classList.remove("svg-text-hit");
-    void match.element.offsetWidth;
+  });
+  // SVG 元素没有 offsetWidth，读取 getBoundingClientRect 强制重排以重启 CSS 动画
+  if (matches.length > 0) {
+    void matches[0].element.getBoundingClientRect();
+  }
+  matches.forEach((match) => {
     match.element.classList.add("svg-text-hit");
   });
-  highlightedTextElsByFloor[floor] = matches.map(
-    (match) => match.element,
-  );
+  highlightedTextElsByFloor[floor] = matches.map((match) => match.element);
 };
 
 // 为命中搜索条件的区域添加高亮样式，当有多个匹配时交错动画
 const highlightZoneMatches = (floor, matches) => {
   clearZoneHighlights(floor);
-  matches.forEach((match, index) => {
-    // 强制触发重绘
+  matches.forEach((match) => {
     match.element.classList.remove("svg-zone-hit", "svg-zone-hit-alt");
-    void match.element.offsetWidth;
+  });
+  // SVG 元素没有 offsetWidth，读取 getBoundingClientRect 强制重排以重启 CSS 动画
+  if (matches.length > 0) {
+    void matches[0].element.getBoundingClientRect();
+  }
+  matches.forEach((match, index) => {
+    // 注入片区原色变量，供 zone-blink 动画在纯黑与原色间切换
+    if (match.originFill) {
+      match.element.style.setProperty("--zone-origin-fill", match.originFill);
+    }
     match.element.classList.add("svg-zone-hit");
     if (
       matches.length > 1 &&
@@ -361,10 +375,8 @@ const searchDoor = async () => {
       if (!loaded) return;
     }
 
-    if (
-      !floorSvgMarkupMap.value[activeFloor.value] ||
-      textIndexByFloor[activeFloor.value].length === 0
-    ) {
+    // 索引在 loadFloorSvg 内随首次渲染建立，markup 已缓存时无需重复加载
+    if (!floorSvgMarkupMap.value[activeFloor.value]) {
       await loadFloorSvg(activeFloor.value);
     }
   } catch {
@@ -566,18 +578,20 @@ onMounted(() => {
   stroke-width: 10px;
   paint-order: stroke fill;
   font-weight: 700;
-  animation: blink 0.8s ease-in-out infinite;
+  /* 闪烁有限次数后停止，避免常驻动画的持续重绘开销 */
+  animation: blink 0.8s ease-in-out 3;
 }
 
 .map-svg-container :deep(svg .svg-zone-hit) {
-  fill: #000 !important;
-  stroke: none !important;
-  fill-opacity: 0.8 !important;
-  animation: blink var(--zone-blink-duration) ease-in-out infinite;
+  /* 不覆盖 fill 与 stroke：闪烁期间 fill 由动画控制，描边保持片区原状 */
+  fill-opacity: 1 !important;
+  /* 闪烁 5 次后通过 forwards 定格在最后一帧的不透明纯黑 */
+  animation: zone-blink var(--zone-blink-duration) linear 5 forwards;
 }
 
 .map-svg-container :deep(svg .svg-zone-hit.svg-zone-hit-alt) {
-  animation-delay: calc(var(--zone-blink-duration) / 2);
+  /* 负延迟让交替组从反相开始，而不是先静止半个周期 */
+  animation-delay: calc(var(--zone-blink-duration) / -2);
 }
 
 @keyframes blink {
@@ -589,6 +603,25 @@ onMounted(() => {
 
   50% {
     opacity: 0.25;
+  }
+}
+
+/* 片区闪烁：每周期前半程纯黑、后半程恢复片区原色，硬切而非渐变；
+   动画结束后定格在不透明纯黑作为静态标记，移除高亮类即可还原原色 */
+@keyframes zone-blink {
+
+  0%,
+  49.9% {
+    fill: #000;
+  }
+
+  50%,
+  99.9% {
+    fill: var(--zone-origin-fill, #f2c761);
+  }
+
+  100% {
+    fill: #000;
   }
 }
 </style>

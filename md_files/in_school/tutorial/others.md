@@ -56,6 +56,86 @@ title: 不便分类的教程
       - 蓝奏云：[https://fpddu6r3pkmc.lanzoum.com/b0j1e9pla 密码:4v5d](https://fpddu6r3pkmc.lanzoum.com/b0j1e9pla)
       - 百度网盘：[https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4](https://pan.baidu.com/s/1ibvLtpTh84IH1sTdrMShEQ?pwd=h5w4)
 
+## 老乡群汇总（QQ群）
+
+::: important
+谨防诈骗！万事核实！
+:::
+
+以下均按拼音排序。
+
+### 省内
+
+| 潍坊     | 群号      |
+| -------- | --------- |
+| 潍坊总群 | 637883540 |
+| 临朐     | 41400858  |
+| 诸城     | 179287264 |
+| 青州     | 252017758 |
+| 高密     | 218591086 |
+| 昌乐     | 348044656 |
+| 安丘     | 612377914 |
+| 寿光     | 315710196 |
+| 寿光迎新 | 687403533 |
+
+| 省内（除潍坊） | 群号       |
+| -------------- | ---------- |
+| 济南           | 904663629  |
+| 青岛1群        | 563428281  |
+| 青岛2群        | 452136059  |
+| 临沂大群       | 343985896  |
+| 临沂小群       | 892755471  |
+| 威海           | 257361947  |
+| 济宁           | 608841050  |
+| 菏泽           | 121772446  |
+| 禹城           | 560497311  |
+| 日照           | 87132843   |
+| 枣庄           | 572915613  |
+| 淄博           | 452570842  |
+| 聊城           | 262105269  |
+| 东营           | 839450408  |
+| 德州           | 328364159  |
+| 沂水           | 108169413  |
+| 泰安           | 1149046796 |
+| 日照           | 87132843   |
+| 滨州           | 673569972  |
+| 烟台           | 775045068  |
+
+### 省外
+
+| 省外     | 群号       |
+| -------- | ---------- |
+| 重庆     | 467613651  |
+| 江苏     | 304478885  |
+| 广西     | 414785353  |
+| 宁夏     | 150640532  |
+| 河南     | 119687693  |
+| 安徽     | 592275507  |
+| 四川     | 158962429  |
+| 江西     | 364678088  |
+| 山西     | 176374915  |
+| 内蒙古   | 480132318  |
+| 浙沪     | 95657552   |
+| 甘肃     | 221050739  |
+| 吉林     | 383548342  |
+| 贵州     | 224246288  |
+| 福建     | 1040097548 |
+| 福建     | 826310289  |
+| 河北     | 89591427   |
+| 广东     | 90804205   |
+| 海南     | 117470688  |
+| 黑龙江   | 276232923  |
+| 湖北新群 | 1104698842 |
+| 湖北老群 | 175329442  |
+| 湖南     | 66795629   |
+| 辽宁     | 252665043  |
+| 青海     | 87228512   |
+| 陕西     | 82826946   |
+| 天津     | 253848136  |
+| 西藏     | 644183908  |
+| 新疆     | 516849351  |
+| 云南     | 789173514  |
+
 ## 公交信息与乘车指南
 
 运营时间通常为06:30～19:00
@@ -427,10 +507,10 @@ title: 不便分类的教程
 
 1. 官网网址：[https://ms.sdsmu.edu.cn$^㊕$](https://ms.sdsmu.edu.cn)
 2. 学校购买的常用正版系统及软件含
-   1. Windows 8、Windows 8.1、Windows 10、Windows 11
-   2. Office 2021、Office 2019、Office 2016、Office 2013
-   3. Office 2021 for Mac、Office 2019 for Mac
-   4. WPS 365、WPS 365 for Mac
+    1. Windows 8、Windows 8.1、Windows 10、Windows 11
+    2. Office 2021、Office 2019、Office 2016、Office 2013
+    3. Office 2021 for Mac、Office 2019 for Mac
+    4. WPS 365、WPS 365 for Mac
 
 ### 激活
 
@@ -449,24 +529,24 @@ title: 不便分类的教程
 
 1. Ventoy（重装工具类，**推荐**）
 
-   官网：[https://www.ventoy.net/cn](https://www.ventoy.net/cn)
+    官网：[https://www.ventoy.net/cn](https://www.ventoy.net/cn)
 
-   下载（NJU镜像源）：
-   [https://mirrors.nju.edu.cn/github-release/ventoy/Ventoy/LatestRelease](https://mirrors.nju.edu.cn/github-release/ventoy/Ventoy/LatestRelease)
+    下载（NJU镜像源）：
+    [https://mirrors.nju.edu.cn/github-release/ventoy/Ventoy/LatestRelease](https://mirrors.nju.edu.cn/github-release/ventoy/Ventoy/LatestRelease)
 
 2. 微PE工具箱（镜像类）
 
-   官网：[https://www.wepe.com.cn](https://www.wepe.com.cn)
+    官网：[https://www.wepe.com.cn](https://www.wepe.com.cn)
 
-   下载（SDU源）：[https://mirrors.sdu.edu.cn/wepe](https://mirrors.sdu.edu.cn/wepe)
+    下载（SDU源）：[https://mirrors.sdu.edu.cn/wepe](https://mirrors.sdu.edu.cn/wepe)
 
 3. 重装系统教程参考
    ::: warning
    **无经验者不推荐**，==重装前务必备份资料==，文章仅供参考，请以实际情况为准
    :::
-   1. [https://www.ventoy.net/cn/doc_start.html](https://www.ventoy.net/cn/doc_start.html)
+    1. [https://www.ventoy.net/cn/doc_start.html](https://www.ventoy.net/cn/doc_start.html)
 
-   2. [https://firpe.cn/page-335](https://firpe.cn/page-335)
+    2. [https://firpe.cn/page-335](https://firpe.cn/page-335)
 
 4. Dism++
    相关链接：[https://github.com/Chuyu-Team/Dism-Multi-language](https://github.com/Chuyu-Team/Dism-Multi-language)
@@ -485,10 +565,10 @@ title: 不便分类的教程
 1. 方式：线下、微信公众号“潍坊微警务”
 2. 用途：申请无犯罪记录、居住证、补办身份证、申请临时身份证明（身份证丢失时）等
 3. 相关申请的步骤：
-   1. 进入公众号 → 点击下方菜单栏“微警务”
-   2. → 点击右下角“个人中心”→ 注册地
-   3. → 选择“潍城区分局”→“望留派出所”（新校区）
-   4. → 选择相关需要办理的事项并按要求填写后提交（临时身份证明可直接下载电子版到手机上）
+    1. 进入公众号 → 点击下方菜单栏“微警务”
+    2. → 点击右下角“个人中心”→ 注册地
+    3. → 选择“潍城区分局”→“望留派出所”（新校区）
+    4. → 选择相关需要办理的事项并按要求填写后提交（临时身份证明可直接下载电子版到手机上）
 
 ## 笔记本电脑简易选购指南
 
@@ -525,31 +605,31 @@ title: 不便分类的教程
 请自行根据下面的列表对自己进行测试，各题得分相加后得到最终结果
 
 1. 家庭情况如何
-   - 贫困/温饱：**非必要不购买**，请直接结束测试，随用随借
-   - 小康
-   - 富裕
+    - 贫困/温饱：**非必要不购买**，请直接结束测试，随用随借
+    - 小康
+    - 富裕
 
 2. 是否有游戏需要
-   - 0分：完全不需要，并且也没有任何玩游戏的计划
-   - 1分：单机游戏等，如植物大战僵尸、4399、红警等
-   - 4分：普通游戏，如原神、我的世界、三角洲行动、CS、其它FPS类游戏
-   - 7分：重型游戏，如GTA5、燕云十六声、赛博朋克2077、无限暖暖、鸣潮等
+    - 0分：完全不需要，并且也没有任何玩游戏的计划
+    - 1分：单机游戏等，如植物大战僵尸、4399、红警等
+    - 4分：普通游戏，如原神、我的世界、三角洲行动、CS、其它FPS类游戏
+    - 7分：重型游戏，如GTA5、燕云十六声、赛博朋克2077、无限暖暖、鸣潮等
 
 3. 是否有重量级办公需求（如处理40w+ 条级别的数据）
-   - 0分：普通办公，基础使用
-   - 1分：普通办公，数据量不超过5w
-   - 2分：有，但通过Python、R、数据库或其它类编程方式解决问题
-   - 3分：有，使用Excel处理
+    - 0分：普通办公，基础使用
+    - 1分：普通办公，数据量不超过5w
+    - 2分：有，但通过Python、R、数据库或其它类编程方式解决问题
+    - 3分：有，使用Excel处理
 
 4. 是否有科研需求
-   - 0分：无
-   - 1分：可能有
-   - 3分：一定有
+    - 0分：无
+    - 1分：可能有
+    - 3分：一定有
 
 5. 是否有视频剪辑需求
-   - 0分：无
-   - 2分：视频时长在10分钟之内，画质不高于1080P
-   - 4分：视频剪辑时长大于20分钟
+    - 0分：无
+    - 2分：视频时长在10分钟之内，画质不高于1080P
+    - 4分：视频剪辑时长大于20分钟
 
 ---
 
@@ -563,7 +643,7 @@ title: 不便分类的教程
 详细选购指南可参考如下链接（请注意文章发布日期，以该公众号最新文章为准，此处可能更新不及时）：
 
 1. [【小白必读】笔吧科普＆祛魅＆购机指南](https://www.kdocs.cn/l/chzEHrH90jRz)
-2. [【小白必看】笔记本电脑选购指南](https://mp.weixin.qq.com/s/levOZShNdKuGBaWf8deRzA)
+2. [【小白必看】笔记本电脑选购指南](https://mp.weixin.qq.com/s/h7VSmtIl-4mDRSxGaoZ2-Q)
 
 ## 教育部认可的全国大学生学科竞赛A类竞赛目录清单
 
